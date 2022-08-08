@@ -1,0 +1,2 @@
+./task2
+Please input a string: The new string is: A

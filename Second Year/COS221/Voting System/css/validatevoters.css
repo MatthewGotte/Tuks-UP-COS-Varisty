@@ -1,0 +1,15 @@
+#title {
+    text-align: center;
+    margin-top: 3%;
+}
+
+#validatevotertable {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 3%);
+    width: 98%;
+}
+
+#validatevotertable>tbody>tr td {
+    padding: 1%;
+}

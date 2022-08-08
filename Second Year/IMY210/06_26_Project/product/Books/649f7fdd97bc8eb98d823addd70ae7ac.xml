@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Lab gurl</name>
+  <id>649f7fdd97bc8eb98d823addd70ae7ac</id>
+  <stock>98</stock>
+  <description>Lab girl by Hope Jahren</description>
+  <category>Books</category>
+  <image>649f7fdd97bc8eb98d823addd70ae7ac.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="USD">345</sale_price>
+  <additional/>
+</product>

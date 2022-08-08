@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Et remote</name>
+  <id>fd423073dd13804b5a01ed94fc7f683c</id>
+  <stock>20000</stock>
+  <description>Transmissions remote</description>
+  <category>Electronics</category>
+  <image>fd423073dd13804b5a01ed94fc7f683c.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="EUR">350</sale_price>
+  <additional/>
+</product>

@@ -1,0 +1,65 @@
+Task 5 (SQL):
+
+1.
+SELECT customer.name, COUNT(*)
+FROM customer_car, customer
+WHERE CustomerID = CustID
+GROUP BY CustID
+HAVING COUNT(*) > 1;
+
+2.
+SELECT m.Type, m.YearModel
+FROM motorbikes AS m
+WHERE m.YearModel IN
+(SELECT MIN(m2.YearModel) FROM motorbikes AS m2);
+
+3.
+SELECT c.Name
+FROM customer AS c
+WHERE c.CustomerID IN
+(SELECT b.CustID FROM returned_bike AS b) AND
+c.CustomerID NOT IN
+(SELECT c2.CustID FROM customer_car AS c2);
+
+4.
+SELECT customer.Name 
+FROM customer
+WHERE customer.CustomerID NOT IN
+(SELECT returned_car.CustID FROM returned_car)
+AND customer.CustomerID NOT IN
+(SELECT customer_car.CustID FROM customer_car);
+
+5 (SQL).
+SELECT *
+FROM cars
+WHERE cars.YearModel = "2020";
+
+6 (SQL).
+SELECT Type FROM
+motorbikes WHERE
+motorbikes.YearModel = "2020" AND
+motorbikes.BikeID IN
+(SELECT returned_bike.BID FROM returned_bike 
+INNER JOIN customer 
+ON customer.CustomerID=returned_bike.CustID 
+WHERE customer.Surname = "Mackenzie");
+
+7 (SQL).
+SELECT customer.Name 
+FROM customer 
+WHERE customer.CustomerID
+IN
+(SELECT customer_bike.CustID
+FROM customer_bike
+WHERE customer_bike.BID 
+NOT IN 
+(SELECT returned_bike.BID
+FROM returned_bike)
+AND customer_bike.RentedDate
+IN
+(SELECT customer_bike.RentedDate
+FROM customer_bike
+WHERE customer_bike.BID
+IN
+(SELECT motorbikes.BikeID
+FROM motorbikes WHERE motorbikes.Type = "Kawasaki ZX-10R SE")));

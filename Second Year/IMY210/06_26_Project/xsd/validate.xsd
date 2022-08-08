@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Matthew Gotte-->
+<!--u20734621-->
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="product">
+		<xs:complexType>
+			<xs:sequence>
+			
+				<xs:choice minOccurs="1" maxOccurs="unbounded">
+				
+					<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"></xs:element>
+					
+					<xs:element name="id">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="32"></xs:maxLength>
+								<xs:minLength value="32"></xs:minLength>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					
+					<xs:element name="stock" type="xs:integer"></xs:element>
+					
+					<xs:element name="description" type="xs:string"></xs:element>
+					
+					<xs:element name="category">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="30"></xs:maxLength>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					
+					<xs:element name="product_type" type="xs:string"></xs:element>
+					
+					<xs:element name="image">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="36"></xs:length>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					
+					<xs:element name="available" type="xs:date"></xs:element>
+					
+					<xs:element name="sale_price">
+					    	<xs:complexType>
+					      		<xs:simpleContent>
+						        		<xs:extension base="xs:decimal">
+						          			<xs:attribute name="currency">
+						            			<xs:simpleType>
+						              				<xs:restriction base="xs:string">
+											                <xs:enumeration value="USD" />
+											                <xs:enumeration value="ZAR" />
+											                <xs:enumeration value="EUR" />
+											                <xs:enumeration value="GBP" />
+						              				</xs:restriction>
+						            			</xs:simpleType>
+						          			</xs:attribute>
+						        		</xs:extension>
+					      		</xs:simpleContent>
+					    	</xs:complexType>
+					  </xs:element>
+					  
+					  <xs:element name="additional"></xs:element>
+					
+				</xs:choice>
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="index">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+				
+					<!--FILE 1-->
+					<xs:element name="category" minOccurs="1" maxOccurs="unbounded">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="30"></xs:maxLength>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					
+					<!--FILE 2-->
+					<xs:element name="product" minOccurs="0" maxOccurs="unbounded">
+					          <xs:complexType>
+						            <xs:simpleContent>
+							              <xs:extension base="xs:string">
+							                	<xs:attribute name="id" use="required">
+							                		<xs:simpleType>
+							                			<xs:restriction base="xs:string">
+							                				<xs:maxLength value="32"></xs:maxLength>
+							                				<xs:minLength value="32"></xs:minLength>
+							                			</xs:restriction>
+							                		</xs:simpleType>
+							                	</xs:attribute>
+							              </xs:extension>
+						            </xs:simpleContent>
+					          </xs:complexType>
+					        </xs:element>
+					
+				</xs:choice>
+			</xs:sequence>
+			
+			<xs:attribute name="category" use="optional">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="30"></xs:maxLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

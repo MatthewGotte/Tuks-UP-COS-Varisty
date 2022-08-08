@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Cactus</name>
+  <id>fb860a9b61e2a0b687a4c5b2da78eb85</id>
+  <stock>67</stock>
+  <description>Cactus in glass</description>
+  <category>Plants</category>
+  <image>fb860a9b61e2a0b687a4c5b2da78eb85.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="ZAR">39</sale_price>
+  <additional/>
+</product>

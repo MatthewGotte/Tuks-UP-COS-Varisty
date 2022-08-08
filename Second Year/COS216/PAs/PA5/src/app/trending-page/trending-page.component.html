@@ -1,0 +1,51 @@
+<ion-tabs class="bar">
+  <ion-tab-bar>
+    <ion-tab-button tab="trending" (click)='trend()'>
+      <ion-icon name="flame-outline"></ion-icon>
+      <ion-label>Trending</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="logout" (click)='logout()'>
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Logout</ion-label>
+    </ion-tab-button>
+    </ion-tab-bar>
+</ion-tabs>
+
+<div *ngIf="output == null" class="loader">
+  <img src="assets/GIF/Dual Ring-1s-200px.gif" alt="loading_spinner.gif">
+</div>
+
+<h1 class="notfound">{{ nocontent }}</h1>
+
+<ion-searchbar class="search" (search)='performSearch($event.target.value)'></ion-searchbar>
+
+<div class="rows">
+  <h1 style="font-size: 15px; padding: 0; margin: 0;" class="filtertitle">Filter by genre:</h1>
+  <select class='genre' [ngModel]="selectedDevice" (ngModelChange)="onChange($event)" name="deviceText">
+    <option [value]="i" *ngFor="let i of genres">{{i}}</option>
+  </select>
+</div>
+
+  <ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content refreshingSpinner="circles"></ion-refresher-content>
+    </ion-refresher>
+    <ion-list>
+      <div *ngFor="let d of output">
+        <ion-item *ngIf="d != null">
+          <div class="gamecard" >
+            <img class="gameimage" [src]="d.background_image"/>
+            <ion-label>
+              <h2 class="title">{{ d.name }}</h2>
+              <p>Developer : {{d.developers[0].name}}</p>
+              <p>Release Date : {{d.released}}</p>
+              <p>Score : {{d.metacritic}}</p>
+              <p>Tag : {{d.tags[0].name}}</p>
+              <p>Platform : {{d.platforms[0].platform.name}}</p>
+            </ion-label>
+          </div>
+        </ion-item>
+      </div>
+    </ion-list>
+  </ion-content>
+

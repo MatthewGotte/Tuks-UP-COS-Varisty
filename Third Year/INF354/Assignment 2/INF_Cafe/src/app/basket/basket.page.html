@@ -1,0 +1,36 @@
+<ion-header onload="getStorage()">
+  <ion-toolbar>
+    <ion-title>Basket</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div *ngIf="!empty">
+    <ion-item-sliding *ngFor="let item of cart">
+
+      <ion-item>
+        <ion-grid>
+          <ion-row id="item"><ion-label>{{ item.ProductName }} - R{{ calcPrice(item) }}</ion-label></ion-row>
+          <ion-row id="quantity"><ion-label>Quantity: {{ item.Quantity }}</ion-label></ion-row>
+        </ion-grid>
+      </ion-item>
+  
+      <ion-item-options side="end">
+        <ion-item-option (click)="removeFromBasket(item.ProductId)" color="danger" expandable>
+          DELETE
+        </ion-item-option>
+      </ion-item-options>
+  
+    </ion-item-sliding>
+
+    <ion-button expand="full" fill="solid" (click)="checkout()">Checkout</ion-button>
+
+  </div>
+
+
+  <div *ngIf="empty">
+    <ion-button color="danger" expand="full" fill="solid">No items in your basket</ion-button>
+  </div>
+  
+</ion-content>

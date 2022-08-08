@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+   
+   
+   
+   
+   
+   
+   <file open="true" path="C:\Users\matth\Google Drive (u20734621@tuks.co.za)\Second Year\Semester 1\IMY 210 (Multimedia)\Project Files\04_16_Practical 2\main.xml" type="XML"/>
+   
+   
+   
+   
+   
+   
+   <file open="false" path="C:\Users\matth\Google Drive (u20734621@tuks.co.za)\Second Year\Semester 1\IMY 210 (Multimedia)\Project Files\04_16_Practical 2\test_game.xml" type="XML">
+      
+      
+      
+      
+      <param name="lastView" value="Source"/>
+   
+   
+   
+   
+   </file>
+   
+   
+   
+   
+   
+   
+   <file open="false" path="C:\Users\matth\Google Drive (u20734621@tuks.co.za)\Second Year\Semester 1\IMY 210 (Multimedia)\Project Files\04_16_Practical 2\test_music.xml" type="XML">
+      
+      
+      
+      
+      <param name="lastView" value="Source"/>
+   
+   
+   
+   
+   </file>
+   
+   
+   
+   
+   
+   
+   <file open="true" path="C:\Users\matth\Google Drive (u20734621@tuks.co.za)\Second Year\Semester 1\IMY 210 (Multimedia)\Project Files\04_16_Practical 2\main.xsd" type="XSD"/>
+   
+   
+   
+   
+   
+   
+   <file open="true" path="C:\Users\matth\Google Drive (u20734621@tuks.co.za)\Second Year\Semester 1\IMY 210 (Multimedia)\Project Files\04_16_Practical 2\game.xsd" type="XSD"/>
+   
+   
+   
+   
+   
+   
+   <file open="false" path="C:\Users\matth\Google Drive (u20734621@tuks.co.za)\Second Year\Semester 1\IMY 210 (Multimedia)\Project Files\04_16_Practical 2\music.xsd" type="XSD">
+      
+      
+      
+      
+      <param name="id" value="1"/>
+      
+      
+      
+      
+      <param name="lastView" value="Source"/>
+   
+   
+   
+   
+   </file>
+
+
+
+
+   
+   
+   <file open="true" path="C:\Users\matth\Desktop\04_16_Practical 2\main.xml" type="XML">
+      
+      
+      <param name="lastView" value="Source"/>
+   
+   
+   </file>
+   
+   
+   <file open="true" path="C:\Users\matth\Desktop\04_16_Practical 2\main.xsd" type="XSD">
+      
+      
+      <param name="lastView" value="Source"/>
+      
+      
+      <param name="id" value="1"/>
+   
+   
+   </file>
+   
+   
+   <file open="true" path="C:\Users\matth\Desktop\04_16_Practical 2\test_game.xml" type="XML">
+      
+      
+      <param name="lastView" value="Source"/>
+   
+   
+   </file>
+   
+   
+   <file open="false" path="C:\Users\matth\Desktop\04_16_Practical 2\music.xsd" type="XSD">
+      
+      
+      <param name="lastView" value="Source"/>
+   
+   
+   </file>
+   
+   
+   <file open="false" path="C:\Users\matth\Desktop\04_16_Practical 2\test_music.xml" type="XML">
+      
+      
+      <param name="lastView" value="Source"/>
+   
+   
+   </file>
+   
+   
+   <file open="true" path="C:\Users\matth\Desktop\04_16_Practical 2\game.xsd" type="XSD">
+      
+      
+      <param name="lastView" value="Source"/>
+   
+   
+   </file>
+
+
+</root>

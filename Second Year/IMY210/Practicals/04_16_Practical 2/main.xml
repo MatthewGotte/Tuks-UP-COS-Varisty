@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<items 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:music="http://www.imy210.com/music"
+	xmlns:game="http://www.imy210.com/game"
+	xsi:noNamespaceSchemaLocation="main.xsd">
+
+   <!-- Items can hold multiple <game> or <music> element -->
+
+	<game>
+		<title>Monster Hunte</title>
+		<game:name>Konrad Tomaszkiewicz</game:name>
+		<release>26 January 2018</release>
+	</game>
+
+	<music>
+		<music:name>The Thrill of It All</music:name>
+		<artist>Sam Smith</artist>
+		<label>Capitol Records</label>
+	</music>
+	
+	<game>
+		<title>Monster Hunter: World</title>
+		<game:name>Yuya Tokuda</game:name>
+		<release>26 January 2018</release>
+	</game>
+
+</items>

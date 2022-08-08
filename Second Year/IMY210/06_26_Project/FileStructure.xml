@@ -1,0 +1,17 @@
+<root_folder>
+	<product>
+		<file>index.xml</file>
+		<category appearance="infinitely">
+			<images/>
+			<file appearance="infinitely">product.xml</file>
+			<file>index.xml</file>
+		</category>
+	</product>
+	<php/> <!-- all PHP files -->
+	<xsl/> <!-- XSLT and XSL-FO transformation files-->
+	<xsd/> <!-- validation files -->
+	<css_js/> <!--CSS styling for website and JavaScript-->
+	<images/> <!--Image styling for website-->
+	<rss/> <!--RSS xml files -->
+	<file> index.php </file> <!-- This should be the only file in the root directory, all other PHP files should be stored in the PHP directory -->
+</root_folder>

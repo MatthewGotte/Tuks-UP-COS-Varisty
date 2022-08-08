@@ -1,0 +1,145 @@
+* {
+    font-family:arial,helvetica, sans-serif;
+}
+
+.background {
+    background-color: black;
+}
+
+#mainpage {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    color: #f6f6f6;
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#dev {
+    color: #05acf4;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#lefttop {
+    display: flex;
+    justify-content: center;
+}
+
+#logo_icon {
+    width: 60%;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 3px solid #bdbec1;
+    margin-right: 5%;
+}
+
+
+
+#login_form {
+    background-color: #202020;
+    border-radius: 7%;
+    height: 15cm;
+    width: 30%;
+}
+
+#signup_form {
+    background-color: #202020;
+    border-radius: 7%;
+    height: 15cm;
+    width: 30%;
+}
+
+#inputs {
+    position: relative;
+    left: 18%;
+}
+
+.inputbox {
+    width: 60%;
+    border-radius: 12px;
+    padding: 2%;
+    margin-bottom: 3%;
+    outline: none;
+    border: none;
+}
+
+.button {
+    margin-top: 5%;
+    border-radius: 12px;
+    width: 65%;
+    padding: 2%;
+    background-color: #05acf4;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#loginlink {
+    color: #05acf4;
+}
+
+#loginlink:hover {
+    cursor: pointer;
+}
+
+#haveaccount {
+    margin-top: 4%;
+
+    width: fit-content;
+    color: #646464;
+}
+
+#already_exists {
+    color: rgb(240, 65, 65);
+    height: fit-content;
+    font-size: 15px;
+    margin: 0%;
+    position: absolute;
+}
+
+#header {
+    text-align: center;
+    margin: 7%;
+    font-size: 40px;
+    color: white;
+}
+
+#forgot_pass {
+    color: #646464;
+}
+
+#forgot {
+    text-align: right;
+    width: fit-content;
+    margin: 0%;
+
+}

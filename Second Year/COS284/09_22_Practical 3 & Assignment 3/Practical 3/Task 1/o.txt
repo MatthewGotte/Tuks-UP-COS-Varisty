@@ -1,0 +1,2 @@
+./task1
+Please enter a string: The length of the string is: 12

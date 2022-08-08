@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Soccer ball</name>
+  <id>a4aaaac0f0c1ff5b0e746e6528acd398</id>
+  <stock>98</stock>
+  <description>Rubber soccer ball </description>
+  <category>Baby and Toddler</category>
+  <image>a4aaaac0f0c1ff5b0e746e6528acd398.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="GBP">3</sale_price>
+  <additional/>
+</product>

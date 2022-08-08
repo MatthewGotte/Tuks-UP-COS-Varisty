@@ -1,0 +1,65 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+
+<HTML>
+<BODY>
+<TOTAL>52</TOTAL>
+<ABOVE>
+<COUNT>22</COUNT>
+<TITLE>Eros</TITLE>
+<TITLE>Romanza</TITLE>
+<TITLE>Black angel</TITLE>
+<TITLE>Eros</TITLE>
+<TITLE>Romanza</TITLE>
+<TITLE>Black angel</TITLE>
+<TITLE>Hide your heart</TITLE>
+<TITLE>Still got the blues</TITLE>
+<TITLE>One night only</TITLE>
+<TITLE>Pavarotti Gala Concert</TITLE>
+<TITLE>Hide your heart</TITLE>
+<TITLE>Still got the blues</TITLE>
+<TITLE>One night only</TITLE>
+<TITLE>Pavarotti Gala Concert</TITLE>
+<TITLE>Empire Burlesque</TITLE>
+<TITLE>Greatest Hits</TITLE>
+<TITLE>1999 Grammy Nominees</TITLE>
+<TITLE>Big Willie style</TITLE>
+<TITLE>Empire Burlesque</TITLE>
+<TITLE>Greatest Hits</TITLE>
+<TITLE>1999 Grammy Nominees</TITLE>
+<TITLE>Big Willie style</TITLE>
+</ABOVE>
+<BELOW>
+<COUNT>30</COUNT>
+<TITLE>Midt om natten</TITLE>
+<TITLE>Picture book</TITLE>
+<TITLE>Midt om natten</TITLE>
+<TITLE>Picture book</TITLE>
+<TITLE>Soulsville</TITLE>
+<TITLE>Soulsville</TITLE>
+<TITLE>Sylvias Mother</TITLE>
+<TITLE>Maggie May</TITLE>
+<TITLE>For the good times</TITLE>
+<TITLE>Tupelo Honey</TITLE>
+<TITLE>The very best of</TITLE>
+<TITLE>Stop</TITLE>
+<TITLE>Bridge of Spies</TITLE>
+<TITLE>Private Dancer</TITLE>
+<TITLE>Red</TITLE>
+<TITLE>Sylvias Mother</TITLE>
+<TITLE>Maggie May</TITLE>
+<TITLE>For the good times</TITLE>
+<TITLE>Tupelo Honey</TITLE>
+<TITLE>The very best of</TITLE>
+<TITLE>Stop</TITLE>
+<TITLE>Bridge of Spies</TITLE>
+<TITLE>Private Dancer</TITLE>
+<TITLE>Red</TITLE>
+<TITLE>When a man loves a woman</TITLE>
+<TITLE>The dock of the bay</TITLE>
+<TITLE>Unchain my heart</TITLE>
+<TITLE>When a man loves a woman</TITLE>
+<TITLE>The dock of the bay</TITLE>
+<TITLE>Unchain my heart</TITLE>
+</BELOW>
+</BODY>
+</HTML>

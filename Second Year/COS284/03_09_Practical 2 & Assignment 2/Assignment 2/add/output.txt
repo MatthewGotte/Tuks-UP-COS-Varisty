@@ -1,0 +1,2 @@
+./add
+Please input the first number: Please input the second number: 12

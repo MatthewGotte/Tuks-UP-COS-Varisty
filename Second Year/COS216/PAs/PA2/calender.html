@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>DEV Games - PA1</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="./css/calender.css"/>
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./script/script.js"></script>
+    </head>
+
+    <body class="background" onload='generateCurrentCalender()'>        
+        <img class="absCenter" id="loading" src="./img/GIF/Spinner-1s-200px.gif" alt="loading_spinner.gif">
+
+        <div class="panel1">
+            <div class="linear">
+                <div class="logo">
+                    <img src="./img/ICONS/logo_transparent.svg" alt="logo_transparent.svg"/>
+                </div>
+                <div class="vl"></div>
+                <div class="linear">
+                    <h1 id="dev">DEV</h1>
+                    <h1>Games</h1>
+                </div>
+
+                <div class="navbuttons">
+                    <button id="prev" onclick="prevMonth()">Previous Month</button>
+                    <button id="next" onclick="nextMonth()">Next Month</button>
+                    <button id="today" onclick="showtoday()">Show Today</button>
+                    <button onclick="refreshPage()">Calender</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="calenderheading">
+            <div class="linear" id="pagetype">
+                <h1 id="month"></h1>
+                <h1 id="year" class="blue"></h1>
+            </div>
+        </div>
+
+        <div class="panel2">
+            <nav class="navbar">
+                <div class="linear">
+                    <a class="navbar-item" href="./trending.html">Trending</a>
+                </div>
+                <div class="linear">
+                    <a class="navbar-item" href="./newReleases.html">New Releases</a> 
+                </div>
+                <div class="linear">
+                    <a class="navbar-item" href="./topRated.html">Top Rated</a> 
+                </div>
+                <div class="linear">
+                    <a class="navbar-item" href="./featured.html">Featured</a> 
+                </div>
+                <div class="linear">
+                    <a id="calender" class="navbar-item" href="./calender.html">Calender</a> 
+                </div>
+            </nav>
+
+            <h1 id="notfound" style="display: none;">Not found<h1>
+
+            <div id="calenderMainpage" class="mainpage"></div>
+
+        </div>
+
+    </body>
+</html>

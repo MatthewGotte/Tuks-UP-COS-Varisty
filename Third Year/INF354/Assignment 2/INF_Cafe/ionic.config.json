@@ -1,0 +1,7 @@
+{
+  "name": "INF_Cafe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

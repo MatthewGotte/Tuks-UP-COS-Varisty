@@ -1,0 +1,73 @@
+.bar {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    transform: translateY(-100%);
+    z-index: 99;
+}
+
+.filtertitle {
+    transform: translateY(25%);
+    color:rgb(66, 66, 66)
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.genre {
+    padding: 2%;
+    margin: 2%;
+    background-color: rgb(36, 36, 36);
+    outline: none;
+    border: none;
+    border-radius: 12px;
+}
+
+.info {
+    font-size: 15px;
+}
+
+.load {
+    position: absolute;
+    top:10%;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+.notfound {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 99;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.gameimage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+.gamecard {
+    display: flex;
+    flex-direction: column;
+}

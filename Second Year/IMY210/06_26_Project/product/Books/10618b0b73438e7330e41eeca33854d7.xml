@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>The storyteller </name>
+  <id>10618b0b73438e7330e41eeca33854d7</id>
+  <stock>34</stock>
+  <description>The Storyteller by Jodi Picoult </description>
+  <category>Books</category>
+  <image>10618b0b73438e7330e41eeca33854d7.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="USD">145</sale_price>
+  <additional/>
+</product>

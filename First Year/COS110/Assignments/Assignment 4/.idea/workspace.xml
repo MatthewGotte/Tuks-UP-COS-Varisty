@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8073dca7-7d09-4db2-ae78-1e24057a6f4e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="clangTidyViaClangd" value="false" />
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ProjectId" id="1jhuZpUCeloOl6MRGThpAuc6wc0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8073dca7-7d09-4db2-ae78-1e24057a6f4e" name="Default Changelist" comment="" />
+      <created>1604268704261</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604268704261</updated>
+      <workItem from="1604268705824" duration="2514000" />
+      <workItem from="1604522615891" duration="19000" />
+      <workItem from="1604828845353" duration="8838000" />
+      <workItem from="1604839149368" duration="21455000" />
+      <workItem from="1604918519223" duration="96676000" />
+      <workItem from="1605296108662" duration="1356000" />
+      <workItem from="1606035057367" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604871796922">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1604871796922" />
+    <state x="673" y="355" width="564" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604952139907">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="673" y="355" width="564" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1604952139907" />
+    <state x="711" y="432" width="488" height="249" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1604871897234">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="711" y="432" width="488" height="249" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1920.1053@0.27.1920.1053" timestamp="1604871897234" />
+    <state x="100" y="127" width="1720" height="853" key="DiffContextDialog" timestamp="1605184850637">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="100" y="127" width="1720" height="853" key="DiffContextDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1605184850637" />
+    <state x="833" y="400" width="244" height="314" key="cloudConfig.SelfSettingsDialog" timestamp="1604958019809">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="833" y="400" width="244" height="314" key="cloudConfig.SelfSettingsDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1604958019809" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1604951400441">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1604951400441" />
+  </component>
+</project>

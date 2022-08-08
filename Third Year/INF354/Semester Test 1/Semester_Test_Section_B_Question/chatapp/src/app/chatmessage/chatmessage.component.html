@@ -1,0 +1,7 @@
+<div class="bot-speech-bubble" *ngIf="msg != null && msg.isBotAuthored">
+    {{msg.content}}
+</div>
+
+<div class="speech-bubble" *ngIf="msg != null && !msg.isBotAuthored">
+    {{msg.content}}
+</div>

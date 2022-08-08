@@ -1,0 +1,8 @@
+Report.class:
+	javac *.java
+
+clean:
+	del -f *.class
+
+run: Report.class
+	java -Xmx64m -cp .;C:/Users/matth/Desktop/mysql-connector-java-8.0.25.jar Report

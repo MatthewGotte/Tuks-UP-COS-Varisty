@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<pokedex>
+	<pokemon>
+		<pokedex_number>147</pokedex_number>
+		<species>POLIWRATH</species>
+		<image>
+			<normal type="png" path="images/">147</normal>
+			<normalback type="png" path="images/back/">147</normalback>
+			<rare type="png" path="images/shiny/">147</rare>
+			<rareback type="png" path="images/back/shiny/">147</rareback>
+		</image>
+		<base_stats>
+			<atk>9</atk>
+			<def>10</def>
+			<satk>7</satk>
+			<sdef>9</sdef>
+			<spd>7</spd>
+		</base_stats>
+		<types>
+			<type type="primary">WATER</type>
+			<type type="secondary">FIGHTING</type>
+		</types>
+		<basic_abilities>
+			<basic_ability>Torrent</basic_ability>
+			<basic_ability>Focus</basic_ability>
+			<basic_ability>Damp</basic_ability>
+			<basic_ability>Water Absorb</basic_ability>
+		</basic_abilities>
+		<high_abilities>
+			<high_ability>Swift Swim</high_ability>
+		</high_abilities>
+		<evolution_chain>
+			<evolution>
+				<evolution_stage>1</evolution_stage>
+				<prereq>none</prereq>
+				<species>POLIWAG</species>
+			</evolution>
+			<evolution>
+				<evolution_stage>2</evolution_stage>
+				<prereq>25</prereq>
+				<species>POLIWHIRL</species>
+			</evolution>
+			<evolution>
+				<evolution_stage>3</evolution_stage>
+				<prereq>Water Stone</prereq>
+				<species>POLIWRATH</species>
+			</evolution>
+		</evolution_chain>
+		<size>
+			<size_category class="M">MEDIUM</size_category>
+			<height>
+				<inches>51.0</inches>
+				<meters>1.3</meters>
+			</height>
+			<weight>
+				<weight_class>4</weight_class>
+				<pounds>119.0</pounds>
+				<kilograms>54.0</kilograms>
+			</weight>
+		</size>
+		<capture_rate>5</capture_rate>
+		<exp_drop>50</exp_drop>
+	</pokemon>
+	<pokemon>
+		<pokedex_number>148</pokedex_number>
+		<species>POLITOED</species>
+		<image>
+			<normal type="png" path="images/">148</normal>
+			<normalback type="png" path="images/back/">148</normalback>
+			<rare type="png" path="images/shiny/">148</rare>
+			<rareback type="png" path="images/back/shiny/">148</rareback>
+		</image>
+		<base_stats>
+			<atk>8</atk>
+			<def>8</def>
+			<satk>9</satk>
+			<sdef>10</sdef>
+			<spd>7</spd>
+		</base_stats>
+		<types>
+			<type type="primary">WATER</type>
+			<type type="secondary">NONE</type>
+		</types>
+		<basic_abilities>
+			<basic_ability>Torrent</basic_ability>
+			<basic_ability>Damp</basic_ability>
+			<basic_ability>Water Absorb</basic_ability>
+		</basic_abilities>
+		<high_abilities>
+			<high_ability>Drizzle</high_ability>
+		</high_abilities>
+		<evolution_chain>
+			<evolution>
+				<evolution_stage>1</evolution_stage>
+				<prereq>none</prereq>
+				<species>POLIWAG</species>
+			</evolution>
+			<evolution>
+				<evolution_stage>2</evolution_stage>
+				<prereq>25</prereq>
+				<species>POLIWHIRL</species>
+			</evolution>
+			<evolution>
+				<evolution_stage>3</evolution_stage>
+				<prereq>Holding King Rock 30</prereq>
+				<species>POLITOED</species>
+			</evolution>
+		</evolution_chain>
+		<size>
+			<size_category class="M">MEDIUM</size_category>
+			<height>
+				<inches>43.0</inches>
+				<meters>1.1</meters>
+			</height>
+			<weight>
+				<weight_class>3</weight_class>
+				<pounds>74.7</pounds>
+				<kilograms>33.9</kilograms>
+			</weight>
+		</size>
+		<capture_rate>5</capture_rate>
+		<exp_drop>50</exp_drop>
+	</pokemon>
+	<pokemon>
+		<pokedex_number>145</pokedex_number>
+		<species>POLIWAG</species>
+		<image>
+			<normal type="png" path="images/">145</normal>
+			<normalback type="png" path="images/back/">145</normalback>
+			<rare type="png" path="images/shiny/">145</rare>
+			<rareback type="png" path="images/back/shiny/">145</rareback>
+		</image>
+		<base_stats>
+			<atk>5</atk>
+			<def>4</def>
+			<satk>4</satk>
+			<sdef>4</sdef>
+			<spd>9</spd>
+		</base_stats>
+		<types>
+			<type type="primary">WATER</type>
+			<type type="secondary">NONE</type>
+		</types>
+		<basic_abilities>
+			<basic_ability>Torrent</basic_ability>
+			<basic_ability>Damp</basic_ability>
+			<basic_ability>Water Absorb</basic_ability>
+		</basic_abilities>
+		<high_abilities>
+			<high_ability>Swift Swim</high_ability>
+		</high_abilities>
+		<evolution_chain>
+			<evolution>
+				<evolution_stage>1</evolution_stage>
+				<prereq>none</prereq>
+				<species>POLIWAG</species>
+			</evolution>
+			<evolution>
+				<evolution_stage>2</evolution_stage>
+				<prereq>25</prereq>
+				<species>POLIWHIRL</species>
+			</evolution>
+			<evolution>
+				<evolution_stage>3</evolution_stage>
+				<prereq>Water Stone</prereq>
+				<species>POLIWRATH</species>
+			</evolution>
+		</evolution_chain>
+		<size>
+			<size_category class="S">SMALL</size_category>
+			<height>
+				<inches>24.0</inches>
+				<meters>0.6</meters>
+			</height>
+			<weight>
+				<weight_class>2</weight_class>
+				<pounds>27.3</pounds>
+				<kilograms>12.4</kilograms>
+			</weight>
+		</size>
+		<capture_rate>25</capture_rate>
+		<exp_drop>15</exp_drop>
+	</pokemon>
+	<pokemon>
+		<pokedex_number>146</pokedex_number>
+		<species>POLIWHIRL</species>
+		<image>
+			<normal type="png" path="images/">146</normal>
+			<normalback type="png" path="images/back/">146</normalback>
+			<rare type="png" path="images/shiny/">146</rare>
+			<rareback type="png" path="images/back/shiny/">146</rareback>
+		</image>
+		<base_stats>
+			<atk>7</atk>
+			<def>7</def>
+			<satk>5</satk>
+			<sdef>5</sdef>
+			<spd>9</spd>
+		</base_stats>
+		<types>
+			<type type="primary">WATER</type>
+			<type type="secondary">NONE</type>
+		</types>
+		<basic_abilities>
+			<basic_ability>Torrent</basic_ability>
+			<basic_ability>Damp</basic_ability>
+			<basic_ability>Water Absorb</basic_ability>
+		</basic_abilities>
+		<high_abilities>
+			<high_ability>Swift Swim</high_ability>
+		</high_abilities>
+		<evolution_chain>
+			<evolution>
+				<evolution_stage>1</evolution_stage>
+				<prereq>none</prereq>
+				<species>POLIWAG</species>
+			</evolution>
+			<evolution>
+				<evolution_stage>2</evolution_stage>
+				<prereq>25</prereq>
+				<species>POLIWHIRL</species>
+			</evolution>
+			<evolution>
+				<evolution_stage>3</evolution_stage>
+				<prereq>Water Stone</prereq>
+				<species>POLIWRATH</species>
+			</evolution>
+		</evolution_chain>
+		<size>
+			<size_category class="M">MEDIUM</size_category>
+			<height>
+				<inches>39.0</inches>
+				<meters>1.0</meters>
+			</height>
+			<weight>
+				<weight_class>2</weight_class>
+				<pounds>44.1</pounds>
+				<kilograms>20.0</kilograms>
+			</weight>
+		</size>
+		<capture_rate>15</capture_rate>
+		<exp_drop>30</exp_drop>
+	</pokemon>
+
+	<pokemon>
+		<pokedex_number>L47</pokedex_number>
+		<species>GIRATINA  Altered Forme</species>
+		<image>
+			<normal type="png" path="images/">L47</normal>
+			<normalback type="png" path="images/back/">L47</normalback>
+			<rare type="png" path="images/shiny/">L47</rare>
+			<rareback type="png" path="images/back/shiny/">L47</rareback>
+		</image>
+		<base_stats>
+			<atk>10</atk>
+			<def>12</def>
+			<satk>10</satk>
+			<sdef>12</sdef>
+			<spd>9</spd>
+		</base_stats>
+		<types>
+			<type type="primary">GHOST</type>
+			<type type="secondary">DRAGON</type>
+		</types>
+		<basic_abilities>
+			<basic_ability>Haunt</basic_ability>
+			<basic_ability>Pure Blooded</basic_ability>
+			<basic_ability>Levitate</basic_ability>
+			<basic_ability>Pressure</basic_ability>
+		</basic_abilities>
+		<high_abilities>
+			<high_ability>Telepathy</high_ability>
+			<high_ability>Defiant</high_ability>
+		</high_abilities>
+		<evolution_chain/>
+		<size>
+			<size_category class="G">GIGANTIC</size_category>
+			<height>
+				<inches>177.0</inches>
+				<meters>4.5</meters>
+			</height>
+			<weight>
+				<weight_class>6</weight_class>
+				<pounds>1653.5</pounds>
+				<kilograms>750.0</kilograms>
+			</weight>
+		</size>
+		<capture_rate>0</capture_rate>
+		<exp_drop>100</exp_drop>
+	</pokemon>
+	
+	<pokemon>
+		<pokedex_number>L48</pokedex_number>
+		<species>ARCEUS</species>
+		<image>
+			<normal type="png" path="images/">L48</normal>
+			<normalback type="png" path="images/back/">L48</normalback>
+			<rare type="png" path="images/shiny/">L48</rare>
+			<rareback type="png" path="images/back/shiny/">L48</rareback>
+		</image>
+		<base_stats>
+			<atk>12</atk>
+			<def>12</def>
+			<satk>12</satk>
+			<sdef>12</sdef>
+			<spd>12</spd>
+		</base_stats>
+		<types>
+			<type type="primary">NORMAL</type>
+			<type type="secondary">NONE</type>
+		</types>
+		<basic_abilities>
+			<basic_ability>Last Chance</basic_ability>
+			<basic_ability>Multitype</basic_ability>
+			<basic_ability>Pressure</basic_ability>
+		</basic_abilities>
+		<high_abilities>
+			<high_ability>Wonder Guard</high_ability>
+		</high_abilities>
+		<evolution_chain>
+			<evolution>
+				<evolution_stage>1</evolution_stage>
+				<prereq>none</prereq>
+				<species>ARCEUS</species>
+			</evolution>
+			<evolution/>
+			<evolution/>
+		</evolution_chain>
+		<size>
+			<size_category class="G">GIGANTIC</size_category>
+			<height>
+				<inches>126.0</inches>
+				<meters>3.2</meters>
+			</height>
+			<weight>
+				<weight_class>6</weight_class>
+				<pounds>705.5</pounds>
+				<kilograms>320.0</kilograms>
+			</weight>
+		</size>
+		<capture_rate>0</capture_rate>
+		<exp_drop>100</exp_drop>
+	</pokemon>
+</pokedex>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema targetNamespace="https://realbooks.cn/ns/1.0/nf" xmlns:xsi="https://realbooks.cn/ns/1.0/nf" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+				<xs:import schemaLocation="a2.xsd"/>
+				<xs:element name="book">
+								<xs:complexType>
+												<xs:sequence>
+																<xs:element ref="overview"/>
+																<xs:element ref="detail"/>
+												</xs:sequence>
+								</xs:complexType>
+				</xs:element>
+</xs:schema>

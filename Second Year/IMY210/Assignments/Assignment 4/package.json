@@ -1,0 +1,17 @@
+{
+  "name": "assignment-4",
+  "version": "1.0.0",
+  "description": "IMY210_Assignemnt_4",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Gotte",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "nodemon": "^2.0.7"
+  }
+}

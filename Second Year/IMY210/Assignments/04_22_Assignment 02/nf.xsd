@@ -1,0 +1,66 @@
+<?xml version="1.0"  encoding="utf-8"?>
+
+<xs:schema targetNamespace="https://realbooks.cn/ns/1.0/nf" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+				<xs:element name="book">
+								<xs:complexType>
+												<xs:sequence>
+																<xs:element name="overview">
+																				<xs:complexType>
+																								<xs:sequence><!--TITLE-->
+																												<xs:element name="title">
+																																<xs:simpleType>
+																																				<xs:restriction base="xs:string">
+																																								<xs:length value="255"/>
+																																				</xs:restriction>
+																																</xs:simpleType>
+																												</xs:element><!--AUTHORS-->
+																												<xs:element name="authors" maxOccurs="10"/><!--YEAR-->
+																												<xs:element name="year" type="xs:date"/>
+																								</xs:sequence>
+																				</xs:complexType>
+																</xs:element>
+																<xs:element name="detail">
+																				<xs:complexType>
+																								<xs:sequence><!--PUBLICATION-->
+																												<xs:element name="publication"><!--ADD ATTRIBUTE RESTRICTION HERE-->
+																																<xs:simpleType>
+																																				<xs:restriction base="xs:string">
+																																								<xs:length value="50"/>
+																																				</xs:restriction>
+																																</xs:simpleType>
+																												</xs:element><!--ISBN-->
+																												<xs:element name="isbn">
+																																<xs:simpleType>
+																																				<xs:restriction base="xs:integer">
+																																								<xs:maxInclusive value="9999999999999"/>
+																																				</xs:restriction>
+																																</xs:simpleType>
+																												</xs:element><!--OCLC-->
+																												<xs:element name="oclc">
+																																<xs:simpleType>
+																																				<xs:restriction base="xs:integer">
+																																								<xs:maxInclusive value="999999999"/>
+																																				</xs:restriction>
+																																</xs:simpleType>
+																												</xs:element><!--CONTENTS-->
+																												<xs:element name="contents" type="xs:string"/><!--GENRES-->
+																												<xs:element name="genres">
+																																<xs:complexType>
+																																				<xs:sequence minOccurs="1" maxOccurs="unbounded">
+																																								<xs:element name="genre">
+																																												<xs:simpleType>
+																																																<xs:restriction base="xs:string">
+																																																				<xs:length value="50"/>
+																																																</xs:restriction>
+																																												</xs:simpleType>
+																																								</xs:element>
+																																				</xs:sequence>
+																																</xs:complexType>
+																												</xs:element>
+																								</xs:sequence>
+																				</xs:complexType>
+																</xs:element>
+												</xs:sequence>
+								</xs:complexType>
+				</xs:element>
+</xs:schema>

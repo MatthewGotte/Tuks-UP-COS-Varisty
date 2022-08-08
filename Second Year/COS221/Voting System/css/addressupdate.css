@@ -1,0 +1,181 @@
+* {
+    font-family: arial, helvetica, sans-serif;
+}
+
+#mainpage {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p {
+    color: white;
+    font-family: helvetica, sans-serif;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#lefttop {
+    display: flex;
+    justify-content: center;
+}
+
+#logo_icon {
+    width: 60%;
+}
+
+select {
+    width: 64% !important;
+}
+
+p {
+    margin: 0;
+    color: rgb(233, 78, 78);
+    padding-left: 4%;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0%;
+}
+
+#castvote {
+    background-color: #f1f1f1;
+    border-radius: 7%;
+    height: fit-content;
+    width: 30%;
+    padding-bottom: 4%;
+    padding-top: 3%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+#addresschange {
+    background-color: #f1f1f1;
+    border-radius: 7%;
+    height: fit-content;
+    width: 30%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+#listtitle {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#partytable {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 30%;
+}
+
+#addparty {
+    background-color: #f1f1f1;
+    border-radius: 7%;
+    height: fit-content;
+    width: 30%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    position: fixed;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#inputs {
+    position: relative;
+    left: 17%;
+}
+
+.inputbox {
+    width: 60%;
+    border-radius: 12px;
+    padding: 2%;
+    margin-bottom: 2%;
+    outline: none;
+    border: none;
+}
+
+.button {
+    margin-top: 2%;
+    border-radius: 12px;
+    width: 65%;
+    padding: 2%;
+    background-color: #202020;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#loginlink {
+    color: #202020;
+}
+
+#loginlink:hover {
+    cursor: pointer;
+}
+
+#haveaccount {
+    margin-top: 4%;
+    width: fit-content;
+    color: #646464;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+}
+
+#already_exists {
+    color: rgb(240, 65, 65);
+    height: fit-content;
+    font-size: 15px;
+    margin: 0%;
+    position: absolute;
+}
+
+#header {
+    text-align: center;
+    margin: 1%;
+    padding: 6%;
+    font-size: 40px;
+    color: #202020;
+}
+
+#forgot_pass {
+    color: #202020;
+}
+
+#forgot {
+    text-align: right;
+    width: fit-content;
+    margin: 0%;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Matthew Gotte, u20734621-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="saltwaterfish.com" xmlns:sw="saltwaterfish.com" xmlns:f="fish.com">
+
+	<xs:import namespace="fish.com" schemaLocation="ns_f.xsd"></xs:import>
+	
+	<xs:element name="fishes">
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="fish">
+					<xs:complexType>
+						<xs:all>
+							<xs:element ref="f:name"></xs:element>
+							<xs:element ref="f:diet"></xs:element>
+							<xs:element name="size">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:integer">
+											<xs:attribute name="unit" type="xs:string" use="required" />
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="type"></xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="size">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:integer">
+					<xs:attribute name="unit" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="type"></xs:element>
+
+</xs:schema>

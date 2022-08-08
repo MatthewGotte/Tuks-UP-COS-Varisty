@@ -1,0 +1,26 @@
+<!--prac1.xml-->
+<!ELEMENT person  ( #PCDATA | fullname | age | id)*>
+<!ELEMENT fullname (first,last)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT first (#PCDATA)>
+<!ELEMENT last (#PCDATA)>
+
+<!ATTLIST person id ID #REQUIRED>
+
+<!--validfile.xml-->
+<!ELEMENT meal ((breakfast|lunch|dinner)*,dessert?)>
+<!ELEMENT breakfast (name,cost)>
+<!ELEMENT lunch (name,cost)>
+<!ELEMENT dinner (name,cost)>
+<!ELEMENT dessert (EMPTY|name|cost)*>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT cost (#PCDATA)>
+
+<!ATTLIST breakfast id ID #REQUIRED>
+<!ATTLIST lunch 
+	id ID #REQUIRED
+	after IDREF #IMPLIED>
+<!ATTLIST dinner id ID #REQUIRED>
+<!ATTLIST cost cur (ZAR|USD) #REQUIRED>
+

@@ -1,0 +1,24 @@
+{
+  "boardgames": [{
+    "details": "Matthew Gotte, u20734621",
+    "boardgame": [{
+        "title": {
+          "@year": 2021,
+          "#text": "Wild Assent"
+        },
+        "designer": "Robert Mc Connell",
+        "category": "Adventure, Dice, Fantasy, Miniatures",
+        "player": 4
+      },
+      {
+        "title": {
+          "@year": 2021,
+          "#text": "Terraforming Mars: Ares Expedition"
+        },
+        "designer": "Sydney Engelstein, Jacob Fryxelius, Nick Little",
+        "category": "Card Game, Science Fiction",
+        "player": 4
+      }
+    ]
+  }]
+}

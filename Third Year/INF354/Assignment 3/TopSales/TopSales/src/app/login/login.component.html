@@ -1,0 +1,38 @@
+<mat-grid-list cols="1" rows="1" rowHeight="2:1">
+  
+    <mat-card>
+        <mat-card-content>
+
+          <!-- login form -->
+          <form [formGroup]="loginForm">
+
+            <h2>Log In</h2>
+
+            <!-- email input field -->
+            <mat-form-field>
+              <input formControlName="email" matInput type="email" placeholder="Username" name="username" required>
+              <mat-error>
+                Email is required
+              </mat-error>
+            </mat-form-field>
+
+            <!-- password input field -->
+            <mat-form-field>
+              <input formControlName="password" matInput type="Password" placeholder="Password" name="password" required>
+              <mat-error>
+                Password is required
+              </mat-error>
+            </mat-form-field>
+
+            <!-- login button -->
+            <button mat-raised-button color="primary" (click)="login()" id="login">Login</button>
+            <p>Don't have an account? Register <a routerLink="/register">here</a></p>
+            
+            <mat-spinner *ngIf="loader"></mat-spinner>
+
+          </form>
+
+      </mat-card-content>
+    </mat-card>
+
+</mat-grid-list>

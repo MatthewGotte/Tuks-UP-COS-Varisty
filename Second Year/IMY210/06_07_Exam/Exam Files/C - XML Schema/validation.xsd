@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Matthew Gotte, u20734621-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:f="fish.com" xmlns:sw="saltwaterfish.com" xmlns:fw="freshwaterfish.com">
+
+	<!--ns and schemas for f, fw, sw-->
+	<xs:import namespace="freshwaterfish.com" schemaLocation="ns_fw.xsd"></xs:import>
+	<xs:import namespace="saltwaterfish.com" schemaLocation="ns_sw.xsd"></xs:import>
+	<xs:import namespace="fish.com" schemaLocation="ns_f.xsd"></xs:import>
+	
+	<xs:element name="aquarium">
+		<!--Give content for aquarium here!-->
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="fish">
+					<xs:complexType>
+						<xs:all>
+							<xs:element ref="f:name"></xs:element>
+							<xs:element ref="f:diet"></xs:element>
+							<xs:element ref="sw:size" minOccurs="0"></xs:element>
+							<xs:element ref="sw:type" minOccurs="0"></xs:element>
+							<xs:element name="cost">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:integer">
+											<xs:attribute name="unit" type="xs:string" use="optional"/>
+											<xs:attribute name="stock" type="xs:integer" use="required"/>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element ref="fw:family" minOccurs="0"></xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

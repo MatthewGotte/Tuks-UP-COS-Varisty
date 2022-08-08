@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="825c86a2-8ce6-4612-826d-3a3937941e6b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ProjectId" id="1hBgYBhzPGVFlYXcwtxxInHjO4N" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="825c86a2-8ce6-4612-826d-3a3937941e6b" name="Default Changelist" comment="" />
+      <created>1599489946172</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599489946172</updated>
+      <workItem from="1599489947638" duration="14409000" />
+      <workItem from="1599526364366" duration="319000" />
+      <workItem from="1599610766247" duration="3906000" />
+      <workItem from="1599643473796" duration="291000" />
+      <workItem from="1599644914822" duration="400000" />
+      <workItem from="1599726644706" duration="42000" />
+      <workItem from="1599765704908" duration="766000" />
+      <workItem from="1599769833278" duration="155000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="180" y="355" width="589" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599491292380">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="180" y="355" width="589" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1599491292380" />
+    <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1599524032479">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="743" y="311" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1599524032479" />
+    <state x="357" y="116" width="914" height="1009" key="dock-window-1" timestamp="1599520225005">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="357" y="116" width="914" height="1009" key="dock-window-1/0.27.1920.1053@0.27.1920.1053" timestamp="1599520225005" />
+  </component>
+</project>

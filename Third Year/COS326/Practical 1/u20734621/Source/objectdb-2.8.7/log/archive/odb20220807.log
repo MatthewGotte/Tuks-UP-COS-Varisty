@@ -1,0 +1,32 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-08-07 22:22:14 #1 server] 
+Server on port 6136 has started by 56488@LAPTOP-7QGCNNPB
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-08-07 22:22:34 #1 server] 
+Server on port 6136 has started by 37816@LAPTOP-7QGCNNPB
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-08-07 22:22:52 #1 store] 
+Database 'C:\Users\matth\Documents\GitHub\COS326\setup\objectdb-2.8.7\db\p2.odb' is opened by 44020@LAPTOP-7QGCNNPB
+
+[2022-08-07 22:22:52 #2 store] 
+Configuration path: C:\Users\matth\Documents\GitHub\COS326\Practical 1\u20734621\Source\objectdb-2.8.7\objectdb.conf
+
+[2022-08-07 22:22:57 #3 store] 
+Database 'C:\Users\matth\Documents\GitHub\COS326\setup\objectdb-2.8.7\db\p2.odb' is closed by 44020@LAPTOP-7QGCNNPB
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2022-08-07 22:23:07 #1 store] 
+Database 'C:\Users\matth\Documents\GitHub\COS326\setup\objectdb-2.8.7\db\p2.odb' is opened by 53680@LAPTOP-7QGCNNPB
+
+[2022-08-07 22:23:07 #2 store] 
+Configuration path: C:\Users\matth\Documents\GitHub\COS326\Practical 1\u20734621\Source\objectdb-2.8.7\objectdb.conf
+
+[2022-08-07 22:23:45 #3 store] 
+Database 'C:\Users\matth\Documents\GitHub\COS326\setup\objectdb-2.8.7\db\p2.odb' is closed by 53680@LAPTOP-7QGCNNPB
+

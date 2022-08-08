@@ -1,0 +1,57 @@
+<?xml version="1.0"  encoding="utf-8"?>
+
+<xs:schema targetNamespace="https://realbooks.cn/ns/1.0/f" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+				<xs:element name="book">
+								<xs:complexType>
+												<xs:all>
+																<xs:element name="title">
+																				<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																												<xs:length value="30"/>
+																								</xs:restriction>
+																				</xs:simpleType>
+																</xs:element>
+																<xs:element name="author">
+																				<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																												<xs:length value="30"/>
+																								</xs:restriction>
+																				</xs:simpleType>
+																</xs:element>
+																<xs:element name="genre">
+																				<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																												<xs:length value="30"/>
+																								</xs:restriction>
+																				</xs:simpleType>
+																</xs:element>
+																<xs:element name="publish" type="xs:date"/>
+																<xs:element name="pages" type="xs:integer"/>
+																<xs:element name="rating">
+																				<xs:simpleType>
+																								<xs:restriction base="xs:integer">
+																												<xs:minInclusive value="0"/>
+																												<xs:maxInclusive value="10"/>
+																								</xs:restriction>
+																				</xs:simpleType>
+																</xs:element>
+																<xs:element name="synopsis"/>
+																<xs:element name="awards">
+																				<xs:complexType>
+																								<xs:choice>
+																												<xs:sequence maxOccurs="unbounded">
+																																<xs:element name="award">
+																																				<xs:simpleType>
+																																								<xs:restriction base="xs:string">
+																																												<xs:length value="30"/>
+																																								</xs:restriction>
+																																				</xs:simpleType>
+																																</xs:element>
+																												</xs:sequence>
+																								</xs:choice>
+																				</xs:complexType>
+																</xs:element>
+												</xs:all>
+								</xs:complexType>
+				</xs:element>
+</xs:schema>

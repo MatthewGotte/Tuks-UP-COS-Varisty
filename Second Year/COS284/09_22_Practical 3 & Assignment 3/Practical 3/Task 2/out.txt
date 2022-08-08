@@ -1,0 +1,1 @@
+Please input a string: The new string is:  ¼THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG ½

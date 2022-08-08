@@ -1,0 +1,169 @@
+* {
+    font-family: arial, helvetica, sans-serif;
+}
+
+body::after {
+    content: "";
+    background: url(../img/homeback.jpg);
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mainpage {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p {
+    color: white;
+    font-family: helvetica, sans-serif;
+}
+
+h1 {
+    color: #f6f6f6;
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#dev {
+    color: #05acf4;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#lefttop {
+    display: flex;
+    justify-content: center;
+}
+
+#logo_icon {
+    width: 60%;
+}
+
+select {
+    width: 64% !important;
+}
+
+p {
+    margin: 0;
+    color: rgb(233, 78, 78);
+    padding-left: 4%;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0%;
+}
+
+#login_form {
+    background-color: #f1f1f1;
+    border-radius: 7%;
+    height: fit-content;
+    width: 30%;
+    padding-bottom: 5%;
+}
+
+#signup_form {
+    background-color: #f1f1f1;
+    border-radius: 7%;
+    height: fit-content;
+    width: 30%;
+    padding-bottom: 1%;
+}
+
+#inputs {
+    position: relative;
+    left: 18%;
+}
+
+.inputbox {
+    width: 60%;
+    border-radius: 12px;
+    padding: 2%;
+    margin-bottom: 2%;
+    outline: none;
+    border: none;
+}
+
+.button {
+    margin-top: 2%;
+    border-radius: 12px;
+    width: 65%;
+    padding: 2%;
+    background-color: #202020;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#loginlink {
+    color: #202020;
+}
+
+#loginlink:hover {
+    cursor: pointer;
+}
+
+#haveaccount {
+    margin-top: 4%;
+    width: fit-content;
+    color: #646464;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+}
+
+#already_exists {
+    color: rgb(240, 65, 65);
+    height: fit-content;
+    font-size: 15px;
+    margin: 0%;
+    position: absolute;
+}
+
+#header {
+    text-align: center;
+    margin: 1%;
+    padding: 6%;
+    font-size: 40px;
+    color: #202020;
+}
+
+#forgot_pass {
+    color: #202020;
+}
+
+#forgot {
+    text-align: right;
+    width: fit-content;
+    margin: 0%;
+}

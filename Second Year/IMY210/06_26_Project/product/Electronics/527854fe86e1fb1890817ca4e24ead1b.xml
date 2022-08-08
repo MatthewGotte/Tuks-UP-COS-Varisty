@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Garmin Watch</name>
+  <id>527854fe86e1fb1890817ca4e24ead1b</id>
+  <stock>50</stock>
+  <description>Running wear</description>
+  <category>Electronics</category>
+  <image>527854fe86e1fb1890817ca4e24ead1b.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="USD">500</sale_price>
+  <additional/>
+</product>

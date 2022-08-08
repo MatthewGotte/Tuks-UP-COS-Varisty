@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Replace Name Surname with your name and surname -->
+        <meta name="author" content="Matthew Gotte" />
+        <title>IMY 220 - A1</title> 
+
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+        <!--style.css link-->
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <section id="forms" class="container-fluid mt-3">
+
+            <div class="row">
+                
+                <div class="col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-header">Login</div>
+                        <div class="card-body">
+                            <form action="log-in.php" method="post">
+                                <div>
+                                    <label for="email">Email address:</label>
+                                    <input class="form-control" type="email" name="email" id="email" placeholder="john.doe@gmail.com"/>
+                                </div>
+                                <div>
+                                    <label for="pass">Password:</label>
+                                    <input class="form-control" type="password" name="pass" id="pass" placeholder="********"/>
+                                </div>
+                                <button class="btn btn-dark mt-3 button_arrow">Login<i class="fas fa-angle-right rotate_down"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-12 mt3">
+                    <div class="card">
+                        <div class="card-header">Register</div>
+                        <div class="card-body">
+                            <form action="register.php" method="post">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <label for="fname">First name:</label>
+                                            <input class="form-control" type="text" name="fname" id="fname" placeholder="John"/>
+                                        </div>
+                                        <div>
+                                            <label for="lname">Last name:</label>
+                                            <input class="form-control" type="text" name="lname" id="lname" placeholder="Doe"/>
+                                        </div>
+                                        <div>
+                                            <label for="email1">Email address:</label>
+                                            <input class="form-control" type="email" name="email1" id="email1" placeholder="john.doe@gmail.com"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <label for="date">Date of birth:</label>
+                                            <input class="form-control" type="date" name="date" id="date"/>
+                                        </div>
+                                        <div>
+                                            <label for="pass1">Create password:</label>
+                                            <input class="form-control" type="password" name="pass1" id="pass1" placeholder="********"/>
+                                        </div>
+                                        <div>
+                                            <label for="pass1">Confirm password:</label>
+                                            <input class="form-control" type="password" name="pass2" id="pass2" placeholder="********"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-dark mt-3 button_arrow">Register<i class="fas fa-angle-right rotate_down"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </body>
+</html>

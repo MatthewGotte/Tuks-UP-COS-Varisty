@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Toy Fish</name>
+  <id>64cda3e31dd809e00e400f8caab5bc7d</id>
+  <stock>56</stock>
+  <description>Rubber teething fish </description>
+  <category>Baby and Toddler</category>
+  <image>64cda3e31dd809e00e400f8caab5bc7d.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="USD">24</sale_price>
+  <additional/>
+</product>

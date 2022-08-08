@@ -1,0 +1,20 @@
+<div id='main_body'>
+  <div class="pure_center"><img id='logo_login' src="assets/img/icons/logo_transparent.svg" alt="main_logo.svg"></div>
+  <div class='linear flexcenter'>
+      <h1 id='dev'>Dev</h1>
+      <h1 id='games'>Games</h1>
+  </div>
+  <br />
+  <div class='linear flexcenter'>
+      <!--form login-->
+
+      <form #form="ngForm" (ngSubmit)="loginEvent(form.value)">
+          <input class="input_field" ngModel type="text" name="email" placeholder="Email"/>
+          <br />
+          <input class="input_field" ngModel type="password" name="password" placeholder="Password"/>
+          <br />
+          <button class="submit_button">Log In</button>
+      </form>
+      
+  </div>
+</div>

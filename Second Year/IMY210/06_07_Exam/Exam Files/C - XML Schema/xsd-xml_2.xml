@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sw:fishes xmlns:f="fish.com" xmlns:sw="saltwaterfish.com">
+	<fish>
+		<f:name>Australian Stripey</f:name>
+		<f:diet>Omnivore</f:diet>
+		<size unit="inches">6</size>
+		<type>Miscellaneous</type><!---->
+	</fish>
+	
+	<fish>
+		<f:name>Speckled Carpet Shark</f:name>
+		<f:diet>Carnivore</f:diet>
+		<size unit="foot">2</size>
+		<type>Shark</type>
+	</fish>
+
+	<fish>
+		<f:name>Little Spinefoot</f:name>
+		<f:diet>Herbivore</f:diet>
+		<size unit="inches">8</size>
+		<type>Rabbitfish</type>
+	</fish>
+<!---->
+</sw:fishes>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sal SYSTEM "dtd-xml.dtd">
+<sal icon="sal">
+	<player name="Tom"/>
+	<player name="Sally"/>
+	
+	<round winner="Tom">
+		<unit name="eli"/>
+		<unit name="lyn"/>
+	</round>
+
+	<round>
+		<unit name="eli"/>
+		<unit name="eli"/>
+	</round>
+
+	<round winner="Sally">
+		<unit name="mika"/>
+		<unit name="hector"/>
+	</round>
+	
+	<round winner="Sally">
+		<unit name="nina"/>
+		<unit name="eli"/>
+	</round>
+</sal>

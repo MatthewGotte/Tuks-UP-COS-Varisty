@@ -1,0 +1,7 @@
+{
+  "name": "semTest_Ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!--Matthew Gotte	u20734621-->
+
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en"
+	unique-identifier="pub-identifier">
+	<metadata>
+		<dc:title id="pub-title">SMELLY CATS</dc:title>
+		<dc:language>English</dc:language>
+		<dc:subject>Poetry</dc:subject>
+		<dc:date>June 2021</dc:date>
+		<dc:publisher>unknown</dc:publisher>
+		<dc:type>poetry</dc:type>
+		<dc:description>A poetry book</dc:description>
+		<!-- search for dublin core metadata tags and add 6 other tags-->
+	</metadata>
+	<manifest>
+		<item id="htmltoc" properties="nav" media-type="application/xhtml+xml" href="toc.xhtml"/>
+		<item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>
+		<item id="basic" href="basic.xhtml" media-type="application/xhtml+xml"/>
+		<item id="sorrow" href="sorrow.xhtml" media-type="application/xhtml+xml"/>
+		<item id="living" href="living.xhtml" media-type="application/xhtml+xml"/>
+		<item id="activities" href="activities.xhtml" media-type="application/xhtml+xml"/>
+		<item id="lifechoice" href="lifechoice.xhtml" media-type="application/xhtml+xml"/>
+		<item id="relationships" href="relationships.xhtml" media-type="application/xhtml+xml"/>
+
+		<item id="cover-image" href="covers/cover.png" media-type="image/png"/>
+		<!--Reference all content that will be used-->
+	</manifest>
+	<spine>
+		<itemref idref="cover" linear="no"/>
+		<itemref idref="htmltoc" linear="yes"/>
+		<itemref idref="basic"/>
+		<itemref idref="sorrow"/>
+		<itemref idref="living"/>
+		<itemref idref="activities"/>
+		<itemref idref="lifechoice"/>
+		<itemref idref="relationships"/>
+		<!--What order will the content be displayed?-->
+	</spine>
+</package>

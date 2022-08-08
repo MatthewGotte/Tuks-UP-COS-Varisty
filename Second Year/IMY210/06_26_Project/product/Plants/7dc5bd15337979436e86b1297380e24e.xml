@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>String of bananas </name>
+  <id>7dc5bd15337979436e86b1297380e24e</id>
+  <stock>97</stock>
+  <description>String of bananas plants in ceramic pot</description>
+  <category>Plants</category>
+  <image>7dc5bd15337979436e86b1297380e24e.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="EUR">128</sale_price>
+  <additional/>
+</product>

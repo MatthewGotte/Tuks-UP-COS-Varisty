@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<product>
+	<!-- Required fields -->
+	<name>Cute Toddler Sundress</name> 
+	<!-- String data type -->
+	<id>b6b44f93207da1721c8cf47384c9e9e1</id> 
+	<!-- This is the ID of the product, it will always be 32 characters -->
+	<stock>192</stock> 
+	<!-- Integer data type -->
+	<description>Charming sundress perfect for lunch out on the town.</description> <!-- String data type -->
+	<category>Baby and Toddler</category> 
+	<!-- String data type, max 30 character -->
+	<product_type>Apparel &amp; Accessories &gt; Clothing &gt; Dresses</product_type> 
+	<!-- String data type --> 
+	<!-- Remember to convert any special characters -->
+	
+	<image>b6b44f93207da1721c8cf47384c9e9e1.png</image> 
+	<!-- String, always 36 character--> 
+	<!-- take into consideration md5 will always be 32 characters and the extension will always be 4 character (including the dot) -->
+	
+	<available>2002-09-24</available> <!-- Date data type, this should be automatically created by PHP -->
+	
+	<sale_price currency="USD">25.0</sale_price> <!-- Decimal data type --> <!-- Attribute data type can be: USD, ZAR, EUR or GBP -->
+	
+	<additional> 
+	<!-- Possible additional fields -->
+	<!-- Treat all these fields as basic string-->
+		<age_group>kids</age_group>
+		<brand>Tailspin</brand>
+		<color>Blue</color>
+		<condition>new</condition>
+		<material>cotton</material>
+		<shipping>
+			<country>US</country>
+			<price currency="USD">3.0</price>
+			<region>CA</region>
+			<service>Ground</service>
+		</shipping>
+		<shipping_weight unit="oz">1.3</shipping_weight>
+		<shipping_label>promotion</shipping_label>
+		<size>2T</size>
+		<size_system>US</size_system>
+		<size_type>regular</size_type>
+		<target_country>US</target_country>
+		<tax>
+			<country>US</country>
+			<rate>9.9</rate>
+			<region>CA</region>
+			<ship>True</ship>
+		</tax>
+	</additional>
+</product>

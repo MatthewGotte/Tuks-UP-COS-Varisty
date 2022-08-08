@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Me before you</name>
+  <id>0a1858ae59ba2ef96a69dd13791e7d17</id>
+  <stock>34</stock>
+  <description>Me before you by Jojo Moyes </description>
+  <category>Books</category>
+  <image>0a1858ae59ba2ef96a69dd13791e7d17.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="USD">124</sale_price>
+  <additional/>
+</product>

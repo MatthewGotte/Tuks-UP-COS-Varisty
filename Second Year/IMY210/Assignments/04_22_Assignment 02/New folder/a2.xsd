@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema xmlns:nf="https://realbooks.cn/ns/1.0/nf" xmlns:f="https://realbooks.cn/ns/1.0/f" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+				<xs:import schemaLocation="nf.xsd" namespace="https://realbooks.cn/ns/1.0/nf"/>
+				<xs:import schemaLocation="f.xsd" namespace="https://realbooks.cn/ns/1.0/f"/>
+				<xs:element name="books">
+								<xs:complexType>
+												<xs:sequence maxOccurs="unbounded">
+																<xs:element ref="nf:book"/>
+																<xs:element ref="f:book"/>
+												</xs:sequence>
+								</xs:complexType>
+				</xs:element>
+				<xs:element name="overview">
+								<xs:complexType>
+												<xs:sequence><!--TITLE-->
+																<xs:element name="title">
+																				<xs:simpleType>
+																								<xs:restriction base="xs:string">
+																												<xs:length value="255"/>
+																								</xs:restriction>
+																				</xs:simpleType>
+																</xs:element><!--AUTHORS-->
+																<xs:element name="authors">
+																				<xs:complexType>
+																								<xs:sequence><!--AUTHOR-->
+																												<xs:element name="author" maxOccurs="10" minOccurs="0"/>
+																								</xs:sequence>
+																				</xs:complexType>
+																</xs:element><!--YEAR-->
+																<xs:element name="year" type="xs:gYear"/>
+												</xs:sequence>
+								</xs:complexType>
+				</xs:element>
+				<xs:element name="detail">
+								<xs:complexType>
+												<xs:sequence>
+																<xs:element name="publication"/>
+																<xs:element name="isbn">
+																				<xs:simpleType>
+																								<xs:restriction base="xs:integer">
+																												<xs:maxInclusive value="999999999999"/>
+																								</xs:restriction>
+																				</xs:simpleType>
+																</xs:element>
+																<xs:element name="oclc">
+																				<xs:simpleType>
+																								<xs:restriction base="xs:integer">
+																												<xs:maxInclusive value="999999999"/>
+																								</xs:restriction>
+																				</xs:simpleType>
+																</xs:element>
+																<xs:element name="contents" type="xs:string"/>
+																<xs:element name="genres">
+																				<xs:complexType>
+																								<xs:sequence>
+																												<xs:element name="genre">
+																																<xs:simpleType>
+																																				<xs:restriction base="xs:string">
+																																								<xs:length value="50"/>
+																																				</xs:restriction>
+																																</xs:simpleType>
+																												</xs:element>
+																								</xs:sequence>
+																				</xs:complexType>
+																</xs:element>
+												</xs:sequence>
+								</xs:complexType>
+				</xs:element>
+				<xs:element name="title" type="xs:string"/>
+				<xs:element name="author" type="xs:string"/>
+				<xs:element name="genre" type="xs:string"/>
+				<xs:element name="publish" type="xs:string"/>
+				<xs:element name="pages" type="xs:unsignedShort"/>
+				<xs:element name="rating">
+								<xs:complexType>
+												<xs:simpleContent>
+																<xs:extension base="xs:unsignedByte">
+																				<xs:attribute name="unit" type="xs:string" use="required"/>
+																</xs:extension>
+												</xs:simpleContent>
+								</xs:complexType>
+				</xs:element>
+				<xs:element name="synopsis">
+								<xs:complexType mixed="true">
+												<xs:attribute name="lang" type="xs:string" use="required"/>
+								</xs:complexType>
+				</xs:element>
+				<xs:element name="awards">
+								<xs:complexType>
+												<xs:sequence>
+																<xs:element maxOccurs="unbounded" name="award" type="xs:string"/>
+												</xs:sequence>
+								</xs:complexType>
+				</xs:element>
+</xs:schema>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Toy Box </name>
+  <id>406f5eaaa492f69222b734110da4f546</id>
+  <stock>60</stock>
+  <description>Rectangular toy box (medium)</description>
+  <category>Baby and Toddler</category>
+  <image>406f5eaaa492f69222b734110da4f546.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="EUR">7</sale_price>
+  <additional/>
+</product>

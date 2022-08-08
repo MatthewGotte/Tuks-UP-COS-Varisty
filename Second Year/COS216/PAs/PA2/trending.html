@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>DEV Games - PA1</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="./css/style.css"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./script/script.js"></script>
+    </head>
+
+    <body class="background" onload="onTrendingload()">
+        <img class="absCenter" id="loading" src="./img/GIF/Spinner-1s-200px.gif" alt="loading_spinner.gif"> 
+
+        <div class="panel1">
+            <div class="linear">
+                <div class="logo">
+                    <img src="./img/ICONS/logo_transparent.svg" alt="logo_transparent.svg"/>
+                </div>
+                <div class="vl"></div>
+                <div class="linear">
+                    <h1 id="dev">DEV</h1>
+                    <h1>Games</h1>
+                </div>
+                <div class="searchbox">
+                    <input id="textsearch" type="text" placeholder="Search for a game...">
+                </div>
+                <div class="linear">
+                    <div class="filter">
+                        <select id="filterTrending">
+                            <option value="" disabled selected hidden>Filter</option>
+                            <option value="">None</option>
+                            <option value="action">Action</option>
+                            <option value="arcade">Arcade</option>
+                            <option value="narrative">Narrative</option>
+                            <option value="strategy">Strategy</option>
+                            <option value="MMORPG">MMORPG</option>
+                        </select>
+                        
+                    </div>
+                    <button id="search" class="searchbutton" onclick="searchTrending()">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="pagetype">
+            <img class = "slowLoad" src="img/ICONS/trending_blue.svg" alt="trending_blue.scg">
+            <h1 class="slowLoad" id="pageheader">Trending</h1>
+        </div>
+
+        <div class="panel2">
+            <nav class="navbar">
+                <div class="linear">
+                    <a id="trending" class="navbar-item" href="./trending.html">Trending</a>
+                </div>
+                <div class="linear">
+                    <a class="navbar-item" href="./newReleases.html">New Releases</a> 
+                </div>
+                <div class="linear">
+                    <a class="navbar-item" href="./topRated.html">Top Rated</a> 
+                </div>
+                <div class="linear">
+                    <a class="navbar-item" href="./featured.html">Featured</a> 
+                </div>
+                <div class="linear">
+                    <a class="navbar-item" href="./calender.html">Calender</a> 
+                </div>
+            </nav>
+            
+            <h1 id="notfound" style="display: none;">Not found<h1>
+
+            <div class="mainpage" id="trendingMain">
+            </div>
+        </div>
+    </body>
+</html>

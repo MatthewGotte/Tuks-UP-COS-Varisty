@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+   <fo:layout-master-set>
+      <fo:simple-page-master master-name="cover" page-height="80mm" page-width="210mm">
+         <fo:region-body/>
+      </fo:simple-page-master>
+      <fo:simple-page-master master-name="content" page-height="80mm" page-width="210mm">
+         <fo:region-body margin="10mm"/>
+         <fo:region-before extent="10mm" background-color="#aeddf6"/>
+         <fo:region-after extent="10mm" background-color="#68ba4a"/>
+         <fo:region-start extent="10mm" background-color="#aeddf6"/>
+         <fo:region-end extent="10mm" background-color="#68ba4a"/>
+      </fo:simple-page-master>
+   </fo:layout-master-set>
+   <fo:page-sequence master-reference="cover" force-page-count="no-force">
+      <fo:flow flow-name="xsl-region-body">
+         <fo:block>
+            <fo:external-graphic content-height="80mm" width="210mm" src="images/logo.jpg"/>
+         </fo:block>
+      </fo:flow>
+   </fo:page-sequence>
+   <fo:page-sequence master-reference="content" initial-page-number="1">
+      <fo:static-content flow-name="xsl-region-before">
+         <fo:block margin-left="5mm" margin-bottom="3mm" margin-top="3mm" color="white" font-weight="bold">Animal Fact Guide</fo:block>
+      </fo:static-content>
+      <fo:static-content flow-name="xsl-region-after">
+         <fo:block margin-top="3mm" margin-bottom="3mm" margin-left="180mm" color="white">
+            <fo:page-number/>
+         </fo:block>
+      </fo:static-content>
+      <fo:flow flow-name="xsl-region-body">
+         <fo:block>
+            <fo:table margin-left="0.5mm" margin-top="0.5mm">
+               <fo:table-column column-width="60mm"/>
+               <fo:table-column column-width="150mm"/>
+               <fo:table-body>
+                  <fo:table-row>
+                     <fo:table-cell width="50mm">
+                        <fo:block>
+                           <fo:external-graphic border="1mm solid grey" text-align="center" content-height="50mm" src="images/african-elephant.jpg"/>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell width="130mm">
+                        <fo:block break-after="page">
+                           <fo:block font-weight="bold">African Elephant</fo:block>
+                           <fo:block font-weight="bold" color="#aeddf6">Loxodonta africana</fo:block>
+                           <fo:block background-color="#aeddf6" padding="3mm">
+        Weighing up to 6000 kg (6.6 tons) and measuring up to 3.3 m (10 ft.) at the shoulder, the African elephant is the world’s largest land mammal. It is characterized by its highly dexterous trunk, long curved tusks, and massive ears.
+
+        A combination of the upper lip and nose, an African elephant’s trunk...
+
+      <fo:block font-size="9px">
+														Read more at http://www.animalfactguide.com/animal-facts/african-elephant/</fo:block>
+                           </fo:block>
+                           <fo:block margin-top="1mm">
+													
+													
+													Tags:
+													Big / Grey / Bald</fo:block>
+                        </fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+                  <fo:table-row>
+                     <fo:table-cell width="50mm">
+                        <fo:block>
+                           <fo:external-graphic border="1mm solid grey" text-align="center" content-height="50mm" src="images/giraffe.jpg"/>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell width="130mm">
+                        <fo:block break-after="page">
+                           <fo:block font-weight="bold">Giraffe</fo:block>
+                           <fo:block font-weight="bold" color="#aeddf6">Giraffa camelopardalis</fo:block>
+                           <fo:block background-color="#aeddf6" padding="3mm">
+        Characterized by its long legs, long neck, and distinctive spotted pattern, many people first believed the giraffe was a cross between a leopard and a camel, which is reflected in its scientific name, Giraffa camelopardalis.
+
+        Giraffes live primarily in savanna...
+      <fo:block font-size="9px">
+														Read more at http://www.animalfactguide.com/animal-facts/giraffe/</fo:block>
+                           </fo:block>
+                           <fo:block margin-top="1mm">
+													
+													
+													Tags:
+													Long / Tongues / Creepy</fo:block>
+                        </fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+                  <fo:table-row>
+                     <fo:table-cell width="50mm">
+                        <fo:block>
+                           <fo:external-graphic border="1mm solid grey" text-align="center" content-height="50mm" src="images/panda.jpg"/>
+                        </fo:block>
+                     </fo:table-cell>
+                     <fo:table-cell width="130mm">
+                        <fo:block break-after="page">
+                           <fo:block font-weight="bold">Giant Panda</fo:block>
+                           <fo:block font-weight="bold" color="#aeddf6">Ailuropoda melanoleuca</fo:block>
+                           <fo:block background-color="#aeddf6" padding="3mm">
+       One of the interesting evolutionary traits of the panda is their protruding wrist bone that acts like a thumb. This helps the pandas hold bamboo while they munch on it with their strong molar teeth. Bamboo makes up nearly the entire...
+      <fo:block font-size="9px">
+														Read more at http://www.animalfactguide.com/animal-facts/giant-panda/</fo:block>
+                           </fo:block>
+                           <fo:block margin-top="1mm">
+													
+													
+													Tags:
+													Black / White / Asian</fo:block>
+                        </fo:block>
+                     </fo:table-cell>
+                  </fo:table-row>
+               </fo:table-body>
+            </fo:table>
+         </fo:block>
+      </fo:flow>
+   </fo:page-sequence>
+</fo:root>

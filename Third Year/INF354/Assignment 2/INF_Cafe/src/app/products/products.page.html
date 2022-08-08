@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Products</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-card *ngFor="let p of products">
+
+    <ion-card-header>
+      <ion-card-subtitle>R{{ p.productPrice }}</ion-card-subtitle>
+      <ion-card-title>{{ p. productName }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{ p.productDescription }}
+    </ion-card-content>
+
+    <ion-grid>
+
+      <form [formGroup]="addToBasketfrm" (ngSubmit)="addToBasket(p)">
+
+        <ion-row class="qauntity">
+
+            <ion-col size="6">
+              <ion-row><ion-text color="dark">Quantity</ion-text></ion-row>
+              <ion-row><ion-input type="number" formControlName="quantity" id="quantity"></ion-input></ion-row>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-button type="submit" class="addtocart">
+                <ion-icon slot="icon-only" name="basket-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+
+        </ion-row>
+
+      </form>
+
+    </ion-grid>
+
+  </ion-card>
+
+</ion-content>

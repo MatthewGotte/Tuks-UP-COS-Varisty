@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sal SYSTEM "dtd-xml.dtd">
+<sal>
+	<sword beat="axe"/>
+	<axe beat="lance"/>
+	<lance beat="sword"/>
+</sal>

@@ -1,0 +1,7 @@
+{
+  "name": "SectionB",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

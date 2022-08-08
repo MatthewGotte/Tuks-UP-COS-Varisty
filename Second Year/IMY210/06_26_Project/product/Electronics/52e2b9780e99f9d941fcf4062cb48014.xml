@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Jbl charge</name>
+  <id>52e2b9780e99f9d941fcf4062cb48014</id>
+  <stock>100</stock>
+  <description>Speaker</description>
+  <category>Electronics</category>
+  <image>52e2b9780e99f9d941fcf4062cb48014.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="ZAR">3200</sale_price>
+  <additional/>
+</product>

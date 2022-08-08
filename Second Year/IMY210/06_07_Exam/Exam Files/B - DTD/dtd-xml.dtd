@@ -1,0 +1,47 @@
+<!--Matthew Gotte, u20734621-->
+<!ELEMENT sal  ( (sword , axe , lance)  | ( player+, round+ ) )>
+
+<!ATTLIST sal 
+icon CDATA #IMPLIED
+>
+
+<!--(sword, axe, lance)-->
+<!ELEMENT sword  EMPTY>
+<!ELEMENT axe  EMPTY>
+
+<!ELEMENT lance  EMPTY>
+
+<!ATTLIST sword
+beat CDATA #IMPLIED
+>
+
+<!ATTLIST axe
+beat CDATA #REQUIRED
+>
+
+<!ATTLIST lance
+beat CDATA #REQUIRED
+>
+
+<!--(player+, round+)-->
+
+<!ELEMENT player  EMPTY>
+<!ELEMENT round  ( unit+ )>
+
+<!ATTLIST player
+name CDATA #REQUIRED
+>
+
+<!ATTLIST round
+winner CDATA #IMPLIED
+>
+
+
+<!--( unit+ ) & unit-->
+<!ELEMENT unit  (sword?)>
+<!ATTLIST unit
+name CDATA #REQUIRED
+>
+
+
+

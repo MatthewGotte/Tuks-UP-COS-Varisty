@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Spekboom</name>
+  <id>0acfb695227b2cc8bb41de2977604d9d</id>
+  <stock>56</stock>
+  <description>South African Spekboom</description>
+  <category>Plants</category>
+  <image>0acfb695227b2cc8bb41de2977604d9d.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="ZAR">30</sale_price>
+  <additional/>
+</product>

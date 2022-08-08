@@ -1,0 +1,188 @@
+     1                                 %line 1+1 task3.asm
+     2                                 [section .data]
+     3 00000000 506C6561736520696E-     s1 dq "Please input an integer: ",0x0a
+     4 00000000 70757420616E20696E-
+     5 00000000 74656765723A200000-
+     6 00000000 00000000000A000000-
+     7 00000000 00000000           
+     8 00000028 54686520746F74616C-     s2 dq "The total sum is: "
+     9 00000028 2073756D2069733A20-
+    10 00000028 000000000000       
+    11                                 
+    12                                 
+    13                                 [section .text]
+    14                                 [global _start]
+    15                                 
+    16                                  _start:
+    17 00000000 E8B0010000              call messages
+    18                                 
+    19                                  start:
+    20 00000005 803E00                  cmp byte[rsi],0
+    21 00000008 7406                    je ext
+    22 0000000A 48FFC1                  inc rcx
+    23 0000000D 48FFC6                  inc rsi
+    24 00000010 EBF1                    jmp start
+    25                                 
+    26                                  ext:
+    27 00000012 4883E901                sub rcx,1
+    28 00000016 49C7C0[00000000]        mov r8,input1
+    29 0000001D 49C7C100000000          mov r9,0
+    30 00000024 49C7C200000000          mov r10,0
+    31 0000002B 49C7C301000000          mov r11,1
+    32 00000032 49C7C40A000000          mov r12,10
+    33 00000039 49C7C701000000          mov r15,1
+    34 00000040 49C7C600000000          mov r14,0
+    35 00000047 48C7C000000000          mov rax,0
+    36 0000004E 4901C8                  add r8,rcx
+    37 00000051 4983E801                sub r8,1
+    38                                 
+    39                                  start2:
+    40 00000055 4883F900                cmp rcx,0
+    41 00000059 7438                    je extit2
+    42 0000005B 4D0FBE08                movsx r9,byte [r8]
+    43 0000005F 4983E930                sub r9,'0'
+    44 00000063 4C89C8                  mov rax,r9
+    45 00000066 49F7E3                  mul r11
+    46 00000069 4901C2                  add r10,rax
+    47 0000006C 48C7C001000000          mov rax,1
+    48 00000073 4D89FE                  mov r14,r15
+    49                                 
+    50                                  multiplier2:
+    51 00000076 4983FE00                cmp r14,0
+    52 0000007A 7407                    je endmultiplier2
+    53 0000007C 4983EE01                sub r14,1
+    54 00000080 49F7E4                  mul r12
+    55 00000083 EBEF                    jmp multiplier2
+    56                                 
+    57                                  endmultiplier2:
+    58 00000085 4989C3                  mov r11,rax
+    59 00000088 49FFC7                  inc r15
+    60 0000008B 4883E901                sub rcx,1
+    61 0000008F 4983E801                sub r8,1
+    62 00000093 EBBE                    jmp start2
+    63                                 
+    64                                  extit2:
+    65 00000095 49C7C300000000          mov r11,0
+    66                                 
+    67                                  start3:
+    68 0000009C 4983FA00                cmp r10,0
+    69 000000A0 7407                    je ext3
+    70 000000A2 4D01D3                  add r11,r10
+    71 000000A5 4983EA01                sub r10,1
+    72 000000A9 EBEF                    jmp start3
+    73                                 
+    74                                  ext3:
+    75 000000AB 49C7C400000000          mov r12,0
+    76 000000B2 49C7C700000000          mov r15,0
+    77 000000B9 49C7C500000000          mov r13,0
+    78 000000C0 4C89D8                  mov rax,r11
+    79 000000C3 49C7C20A000000          mov r10,10
+    80 000000CA 49C7C100000000          mov r9,0
+    81 000000D1 48C7C200000000          mov rdx,0
+    82 000000D8 49C7C0[00000000]        mov r8,ans
+    83                                 
+    84                                  start4:
+    85 000000DF 4831D2                  xor rdx,rdx
+    86 000000E2 4883F80A                cmp rax,10
+    87 000000E6 7C06                    jl less
+    88 000000E8 49F7F2                  div r10
+    89 000000EB 49FFC1                  inc r9
+    90 000000EE EBED                    jmp start4
+    91                                 
+    92                                  less:
+    93 000000F0 4883F800                cmp rax,0
+    94 000000F4 747B                    jz totaljump
+    95 000000F6 4983F900                cmp r9,0
+    96 000000FA 7457                    je zerovalue
+    97 000000FC 4989C4                  mov r12,rax
+    98 000000FF 4883C030                add rax,48
+    99 00000103 498900                  mov [r8],rax
+   100 00000106 49FFC7                  inc r15
+   101 00000109 48C7C00A000000          mov rax,10
+   102                                 
+   103                                  mul1:
+   104 00000110 4983F901                cmp r9,1
+   105 00000114 7407                    je endMul
+   106                                 
+   107 00000116 49F7E2                  mul r10
+   108 00000119 4983E901                sub r9,1
+   109 0000011D EBEF                    jmp mul1
+   110                                 
+   111                                  endMul:
+   112 0000011F 49F7E4                  mul r12
+   113 00000122 4929C3                  sub r11,rax
+   114 00000125 49F7F2                  div r10
+   115 00000128 49F7F4                  div r12
+   116 0000012B 4C39D8                  cmp rax,r11
+   117 0000012E 7F00                    jg addZero
+   118 00000130 EB0B                    jmp skip
+   119                                 
+   120                                  addZero:
+   121 00000132 49FFC0                  inc r8
+   122 00000135 4983C530                add r13,'0'
+   123 00000139 4D8928                  mov [r8],r13
+   124 0000013C 49FFC7                  inc r15
+   125                                 
+   126 0000013F 4C89D8                  skip: mov rax,r11
+   127 00000142 49FFC0                  inc r8
+   128 00000145 49C7C500000000          mov r13,0
+   129 0000014C 49C7C100000000          mov r9,0
+   130 00000153 EB88                    jmp start4
+   131                                 
+   132                                  zerovalue:
+   133 00000155 4983FF00                cmp r15,0
+   134 00000159 740A                    jz this
+   135 0000015B 4883C030                add rax,'0'
+   136 0000015F 498900                  mov [r8],rax
+   137 00000162 49FFC7                  inc r15
+   138 00000165 EB0A                    jmp totaljump
+   139                                 
+   140                                  this:
+   141 00000167 4883C030                add rax,'0'
+   142 0000016B 498900                  mov [r8],rax
+   143 0000016E 49FFC7                  inc r15
+   144 00000171 EBFE                    jmp totaljump
+   145                                 
+   146                                 
+   147                                 
+   148                                  totaljump:
+   149 00000173 48C7C212000000          mov rdx,18
+   150 0000017A 48BE[00000000000000-     mov rsi, qword s2
+   151 0000017A 00]                
+   152 00000184 48C7C001000000          mov rax, 0x1
+   153 0000018B 48C7C701000000          mov rdi, 0x1
+   154 00000192 0F05                    syscall
+   155                                 
+   156 00000194 4C89FA                  mov rdx,r15
+   157 00000197 48C7C6[00000000]        mov rsi, dword ans
+   158 0000019E 48C7C001000000          mov rax, 0x1
+   159 000001A5 48C7C701000000          mov rdi, 0x1
+   160 000001AC 0F05                    syscall
+   161                                 
+   162                                 exit:
+   163 000001AE 48C7C03C000000          mov rax,60
+   164 000001B5 4831FF                  xor rdi,rdi
+   165 000001B8 0F05                    syscall
+   166                                 
+   167                                 messages:
+   168                                 
+   169 000001BA 48C7C001000000          mov rax, 0x1
+   170 000001C1 48C7C701000000          mov rdi, 0x1
+   171 000001C8 48BE[00000000000000-     mov rsi, qword s1
+   172 000001C8 00]                
+   173 000001D2 48C7C219000000          mov rdx,25
+   174 000001D9 0F05                    syscall
+   175                                 
+   176 000001DB 48C7C000000000          mov rax, 0x0
+   177 000001E2 48C7C700000000          mov rdi, 0x0
+   178 000001E9 48C7C6[00000000]        mov rsi, input1
+   179 000001F0 48C7C284000000          mov rdx,132
+   180 000001F7 0F05                    syscall
+   181                                 
+   182 000001F9 48C7C2[00000000]        mov rdx, input1
+   183 00000200 4889D6                  mov rsi,rdx
+   184 00000203 4831C0                  xor rax, rax
+   185 00000206 4831D2                  xor rdx,rdx
+   186 00000209 4831C9                  xor rcx,rcx
+   187                                 
+   188 0000020C C3                      ret

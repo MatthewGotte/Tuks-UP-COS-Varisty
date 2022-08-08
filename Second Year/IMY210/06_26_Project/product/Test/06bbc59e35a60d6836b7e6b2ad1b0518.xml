@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Testimage</name>
+  <id>06bbc59e35a60d6836b7e6b2ad1b0518</id>
+  <stock>900</stock>
+  <description>Tester</description>
+  <category>Test</category>
+  <image>06bbc59e35a60d6836b7e6b2ad1b0518.jpg</image>
+  <available>2021-06-29</available>
+  <sale_price currency="ZAR">600</sale_price>
+  <additional/>
+</product>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>String of pearls</name>
+  <id>5bceccfa3dc95eeebe8ef3593ececc55</id>
+  <stock>123</stock>
+  <description>String of pearls in knitted pot</description>
+  <category>Plants</category>
+  <image>5bceccfa3dc95eeebe8ef3593ececc55.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="GBP">12</sale_price>
+  <additional/>
+</product>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Torch</name>
+  <id>a8b6ce53a1cdf2ee4d3f16b939029b2b</id>
+  <stock>500</stock>
+  <description>Light poweful torch</description>
+  <category>Baby and Toddler</category>
+  <image>a8b6ce53a1cdf2ee4d3f16b939029b2b.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="USD">268</sale_price>
+  <additional/>
+</product>

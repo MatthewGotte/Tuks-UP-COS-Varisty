@@ -1,0 +1,12 @@
+Task 7:
+
+	SELECT * FROM book WHERE book_genre='Horror Fiction';
+
+Task 8: How to import the dump file form the terminal:
+
+	mysql -u [username] -p -h [hostname] [DB name] < [DB name].sql
+
+	NOTE: 
+	1.The database of name [DB name] must exist before the import.
+	2.-h flag is omitted if you are importing to a local server.
+	3.< implies import

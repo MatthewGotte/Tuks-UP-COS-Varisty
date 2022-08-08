@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:f="https://realbooks.cn/ns/1.0/f" xmlns:nf="https://realbooks.cn/ns/1.0/nf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+				<xs:import namespace="https://realbooks.cn/ns/1.0/nf" schemaLocation="nf.xsd"/>
+				<xs:import namespace="https://realbooks.cn/ns/1.0/f" schemaLocation="f.xsd"/>
+				<xs:element name="books">
+								<xs:complexType>
+												<xs:sequence maxOccurs="unbounded" minOccurs="1">
+																<xs:element ref="nf:book"/>
+																<xs:element ref="f:book"/>
+												</xs:sequence>
+								</xs:complexType>
+				</xs:element>
+</xs:schema>

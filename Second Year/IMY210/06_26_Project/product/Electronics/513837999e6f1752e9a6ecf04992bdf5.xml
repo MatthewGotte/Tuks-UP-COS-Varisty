@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Microsoft Moise</name>
+  <id>513837999e6f1752e9a6ecf04992bdf5</id>
+  <stock>5000</stock>
+  <description>Chip Wireless Mouse</description>
+  <category>Electronics</category>
+  <image>513837999e6f1752e9a6ecf04992bdf5.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="GBP">600</sale_price>
+  <additional/>
+</product>

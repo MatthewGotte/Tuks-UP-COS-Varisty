@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Keyboard</name>
+  <id>6ce4d85a628a88bbdb3ac24a8e5a9c2e</id>
+  <stock>100</stock>
+  <description>Microsoft Keyboard Bluetooth</description>
+  <category>Electronics</category>
+  <image>6ce4d85a628a88bbdb3ac24a8e5a9c2e.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="ZAR">1500</sale_price>
+  <additional/>
+</product>

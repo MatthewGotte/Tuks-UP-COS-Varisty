@@ -1,0 +1,35 @@
+<app-nav-bar></app-nav-bar>
+<div class="container my-auto">
+  <div class="col text-center">
+
+    <img src="assets/tomato.svg" width="400em">
+  
+    <div id="clock">
+      <div class="values">{{currentTimeSlot}}</div>
+    </div>
+  
+    
+    <div class="btn-group mt-5" role="group" aria-label="SessionButtons">
+      <!--TODO: introduce conditional hiding of the following button -->
+      <button type="button" class="btn btn-secondary" (click)="StartWorkSession()" *ngIf="isWorking()">Work</button>
+      <!--TODO: introduce conditional hiding of the following button -->
+      <button type="button" class="btn btn-secondary" (click)="StartBreak()" *ngIf="!isWorking()">Break</button>
+  
+      
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        More actions
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <!--TODO: donate/pay 100 ZAR using the payfast sandbox-->
+        <form action="https://sandbox.payfast.co.za/eng/process" method="post">
+          <input type="hidden" name="merchant_id" value="10000100">
+          <input type="hidden" name="merchant_key" value=" 46f0cd694581a">
+          <input type="hidden" name="amount" value="100.00">
+          <input type="hidden" name="item_name" value="Pomodoro subscription">
+          <button class="btn btn-light" type="submit">Donate R100!</button>
+        </form>
+      </div>
+    </div>
+  
+  </div>
+</div>

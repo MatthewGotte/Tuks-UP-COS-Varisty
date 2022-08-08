@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<books
+	xmlns:f="https://realbooks.cn/ns/1.0/f" 
+	xmlns:nf="https://realbooks.cn/ns/1.0/nf">
+	
+	<!-- <books> can contain a unlimited list of object from both namespaces, it can also be empty-->
+	
+	<!--////////////////////////////////////////////////////////////////////////////////-->
+					<!-- Namespace of an nd:book-->
+	
+	<nf:book>
+		<!-- <book> contain two element <overview> and <detail> in order-->
+		<overview>	
+			<!-- <overview> contains the following elements in order: <title> <author> <year>-->
+			<title>What Galileo saw : imagining the scientific revolution</title> 
+			<!-- plain test, no longer than 255 character--> 
+			<authors>
+			<!-- <authors> at most can contain 10 author abut can also be empty -->
+				<author>Lawrence Lipking</author> 
+				<!-- plain test, no longer than 50 character--> 
+			</authors>
+			<year>2014</year> 
+			<!-- has to be a date -->
+		</overview>
+		
+	
+	</nf:book>
+
+
+	<!--////////////////////////////////////////////////////////////////////////////////-->
+
+			<!--Namespace of an f:book-->
+
+	<f:book>
+		<!--all element can only appear once but can appear in any order-->
+		<title>Ashes</title>
+		<!-- plain test, no longer than 30 character--> 
+		<author>Ilsa J. Bick</author>
+		<!-- plain test, no longer than 30 character--> 
+		<genre>Horror</genre>
+		<!-- plain test, no longer than 30 character--> 
+		<publish>September 2011</publish>
+		<!-- has to be a valid date--> 
+		<pages>496</pages>
+		<!-- integer number-->
+		<rating unit="stars">4</rating>
+		<!-- can be any number from 0 to 10-->
+		<synopsis lang="en">
+		<!-- <synopsis> contains an unordered, unlimited mixture of text, <b>, <i> and <br>. Both <b> and <i> both contain string values and <br> is always empty -->
+		<!-- @lang can only be one of the following: en, ru, jp, cn, or afk-->
+			<b>IT COULD HAPPEN TOMORROW ...</b>
+			<br/>
+			An electromagnetic pulse sweeps through the sky, destroying every electronic device and killing billions. For those spared, it's a question of who can be trusted and who is no longer human....
+			<br/>
+			Desperate to find out what happened and to avoid the Changed, Alex meets up with Tom -- a young army veteran -- and Ellie, a young girl whose grandfather was killed by the electromagnetic pulse.
+			<br/>
+			This improvised family will have to use every ounce of courage they have just to survive.
+			<br/>
+		</synopsis>
+		
+		<awards>
+		<!-- <award> can contain a unlimited list of <award> but can be empty as well-->
+			<award>2013 Gateway Readers Award -- High School (Nominee) </award>
+			<!-- plain test, no longer than 30 character--> 
+			<award>2014 Sequoyah Book Award -- High School (Nominee) </award>
+		</awards>
+	</f:book>
+	
+	<!--////////////////////////////////////////////////////////////////////////////////-->
+	
+</books>

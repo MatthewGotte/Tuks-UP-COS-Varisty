@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <style>
+        .right {
+            text-align: right;
+            padding-right: 5%;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .dig {
+            width: 100px;
+        }
+
+        table {
+            height: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        * {
+            font-size: 30px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+    </style>
+  </head>
+  <body>
+    
+    <table border="1">
+
+        <tr>
+            <td colspan="4" class="right">SUM</td>
+        </tr>
+
+        <tr>
+            <td colspan="1" class="center"><a href="C">CE</td>
+            <td colspan="3" class="right">ANS</td>
+        </tr>
+
+        <tr>
+            <td class="center dig"><a href="7">7</a></td>
+            <td class="center dig"><a href="8">8</a></td>
+            <td class="center dig"><a href="9">9</a></td>
+            <td class="center dig"><a href="d">/</a></td>
+        </tr>
+
+        <tr>
+            <td class="center dig"><a href="4">4</a></td>
+            <td class="center dig"><a href="5">5</a></td>
+            <td class="center dig"><a href="6">6</a></td>
+            <td class="center dig"><a href="-">-</a></td>
+        </tr>
+
+        <tr>
+            <td class="center dig"><a href="1">1</a></td>
+            <td class="center dig"><a href="2">2</a></td>
+            <td class="center dig"><a href="3">3</a></td>
+            <td class="center dig"><a href="+">+</a></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" class="center"><a href="0">0</a></td>
+            <td class="center dig"><a href="=">=</a></td>
+        </tr>
+
+    </table>
+
+  </body>
+</html>

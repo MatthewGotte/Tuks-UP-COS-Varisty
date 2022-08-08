@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index category="Baby and Toddler">
+	<!-- the attribute category should be a string data type, max 30 character  -->
+
+	<!-- Can have as many product as possible, but optional -->
+	<product id="b6b44f93207da1721c8cf47384c9e9e1">Cute Toddler Sundress</product> <!-- string data type -->
+	<!-- the attribute id should be a id data type, it will always be 32 characters -->
+</index>

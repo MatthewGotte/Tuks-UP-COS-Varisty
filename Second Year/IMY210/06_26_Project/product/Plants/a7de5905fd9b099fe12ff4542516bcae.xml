@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Fern</name>
+  <id>a7de5905fd9b099fe12ff4542516bcae</id>
+  <stock>67</stock>
+  <description>Christmas Fern</description>
+  <category>Plants</category>
+  <image>a7de5905fd9b099fe12ff4542516bcae.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="EUR">7</sale_price>
+  <additional>&lt;test&gt;Manual input&lt;/test&gt;</additional>
+</product>

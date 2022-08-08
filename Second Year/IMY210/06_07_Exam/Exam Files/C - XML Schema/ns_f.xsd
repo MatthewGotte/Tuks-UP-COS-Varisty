@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Matthew Gotte, u20734621-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="fish.com" xmlns:f="fish.com">
+
+	<xs:element name="fish">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="name"></xs:element>
+				<xs:element name="diet"></xs:element>
+				<xs:element name="species"></xs:element>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="name"></xs:element>
+	
+	<xs:element name="diet"></xs:element>
+
+</xs:schema>

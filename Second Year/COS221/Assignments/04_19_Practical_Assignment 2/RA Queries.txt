@@ -1,0 +1,9 @@
+Task 5 (RA):
+
+5.
+\select_{YearModel="2020"} cars;
+
+6.
+\project_{Type}((\select_{YearModel="2020"} motorbikes) \join_{BikeID = BID} \select_{Surname="Mackenzie"}(returned_bike \join_{CustomerID=CustID} customer));
+
+7.\select_{Name} (customer \join_{CustID = CustomerID} (motorbikes \join_{RentedDate=RentedDate} (\project_{RentedDate, BID, CustID}(customer_bike \join_{BID=BikeID} (\select_{Type="Kawasaki ZX-10R SE"} motorbikes)))));

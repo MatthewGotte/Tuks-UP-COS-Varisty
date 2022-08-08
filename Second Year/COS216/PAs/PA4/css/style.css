@@ -1,0 +1,509 @@
+* {
+    font-family:arial,helvetica, sans-serif;
+}
+
+.background {
+    background-color: black;
+}
+
+.panel1 {
+    margin-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: fit-content;
+    /*border-bottom: 2px solid #bdbec1;*/
+    position: flex;
+    justify-content: center;
+}
+
+.searchbutton {
+    margin-left: 35%;
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    color: #646464;
+    background-color: white;
+}
+
+#gamename {
+    color: white;
+    font-family:arial,helvetica, sans-serif;
+    font-size: 30px;
+}
+
+#rating {
+    color: #bdbec1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+#releasedate {
+    color: #646464;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: flex;
+    margin-top: 0.9%;
+    height: fit-content;
+    text-align: center;
+}
+
+.titleblock {
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.panel2 {
+    background-color: black;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 99 !important;
+}
+
+li {
+    color: #f6f6f6;
+    list-style: none;
+}
+
+.slowLoad {
+    animation: loadin 850ms 1 forwards ease-in;
+}
+
+.pagetype {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.pagetype > img {
+    width: 13mm;
+    padding-right: 2mm;
+}
+
+#pageheader {
+    font-size: 35px;
+    height: fit-content;
+    margin-top: 0.4%;
+    width: fit-content;
+}
+
+#genre {
+    width: 100%;
+    margin-top: 2%;
+}
+
+#genres {
+    font-size: 25px;
+    height: fit-content;
+    color: white;
+}
+
+.data th {
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+    padding-right: 5mm;
+}
+
+.data {
+    max-width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.data td {
+    color: #bdbec1;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 5mm;
+    width: 50%;
+}
+
+.metadata > div > p {
+    margin-top: 0;
+    margin-bottom: 0%;
+    margin-left: 3%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bdbec1;
+}
+
+#developer {
+    font-size: 25px;
+    height: fit-content;
+    color: white;
+}
+
+#test {
+    display: flex;
+    justify-content: center;
+}
+
+.gamelink {
+    color: #bdbec1;
+    transition: color 250ms;
+}
+
+.gamelink:hover {
+    color: white;
+    ;
+}
+
+/*/////////////////////////*/
+
+.tooltip .tooltiptext {
+    font-size: 30px;
+    visibility: hidden;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    text-align: center;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+/*/////////////////////////*/
+
+.gamecard {
+    width: 100%;
+    margin: 3%;
+    height: fit-content;
+    background-color: #202020;
+    border-radius: 12px;
+    animation: loadin 1s 1 forwards ease-in;
+}
+
+@keyframes hoverOn {
+    0% {}
+    100% {transform: scale(1.05);}
+}
+
+@keyframes hoverOff {
+    0% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+}
+
+.gamecard:hover {
+    animation: hoverOn 300ms 1 forwards ease-in;
+}
+
+.gamecard:not(:hover) {
+    animation: hoverOff 350ms 1 forwards ease-in;
+}
+
+.metadata {
+    width: 90%;
+    height: fit-content;
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+.vl {
+    border-left: 3px solid #bdbec1;
+    height: 2cm;
+    padding-right: 5mm;
+}   
+
+#dev {
+    color: #05acf4;
+}
+
+#pagename {
+    size: 60px;
+    color: #bdbec1;
+    padding-left: 2cm;
+    opacity: 0.8;
+}
+
+#tipheader {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 3%;
+    margin-left: 5%;
+
+}
+
+#tiprating {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #646464;
+}
+
+h1 {
+    color: #f6f6f6;
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center a {
+    height: 1cm;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchbox input {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 1cm;
+    height: 40px;
+    border-radius: 12px;
+    width: 100%;
+    outline: none;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: none;
+}
+
+.searchbox {
+    width: 50%;
+}
+
+.navbar div {
+    margin-bottom: 3mm;
+    margin-top: 3mm;
+}
+
+.navbar {
+    height: fit-content;
+
+    border-bottom: 2px solid #bdbec1;
+    border-top: 2px solid #bdbec1;
+
+    padding-top: 1%;
+
+    padding-bottom: 1%;
+
+    top: 2%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    margin-left: 0%;
+}
+
+.navbar-item {
+    text-decoration: none;
+    color: #646464;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#trending {
+    color: #22b4e5;
+}
+
+#newReleases {
+    color: #22b4e5;
+}
+
+#topRated {
+    color: #22b4e5;
+}
+
+#featured {
+    color: #22b4e5;
+}
+
+#calender {
+    color: #22b4e5;
+}
+
+#trendingicon {
+    text-shadow: 2px 2px 5px white;
+}
+
+.footer {
+    color: #646464;
+    text-align: center;
+}
+
+body > div.footerback {
+    border-top: 2px solid #bdbec1;
+    border-bottom: 2px solid #bdbec1;
+    width: 98%;
+    margin-bottom: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.linear img {
+    padding-right: 3mm;
+}
+
+.navbar-item:hover {
+    color: white;
+    transition: color 300ms;    
+}
+
+.test {
+    display: inline;
+}
+
+#set_genre:hover {
+    cursor: pointer;
+}
+
+.mainpage {
+    width: 75%;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+.theme {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+#themeselect {
+    margin-bottom: 3%;
+}
+
+.smallcard {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+
+.linear {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img {
+    width: 2cm;
+    padding-right: 5mm;
+}
+
+.filter select{
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    margin-left: 80%;
+    color: #646464;
+}
+
+.filter select:hover {
+    transition: background-color 250ms;   
+    cursor: pointer; 
+}
+
+.gameimage > img {
+    border-radius: 12px;
+    height: auto;
+    width: 90%;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.bio {
+    text-align: justify;
+}
+
+.video {
+    border-radius: 12px;
+    width: 90%;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@keyframes loadin {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: loadin 400ms 1 forwards ease-in;
+}
+
+#notfound {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #646464;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+      display: flex;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 50%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #646464; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #22b4e5; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #22b4e5; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }

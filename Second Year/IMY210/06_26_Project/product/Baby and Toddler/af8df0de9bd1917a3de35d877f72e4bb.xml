@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Ball of grass</name>
+  <id>af8df0de9bd1917a3de35d877f72e4bb</id>
+  <stock>49</stock>
+  <description>Balled shaped grass in ceramic pot</description>
+  <category>Baby and Toddler</category>
+  <image>af8df0de9bd1917a3de35d877f72e4bb.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="ZAR">139</sale_price>
+  <additional/>
+</product>

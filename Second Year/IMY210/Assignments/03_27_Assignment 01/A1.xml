@@ -1,0 +1,143 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!-- u20734621, Matthew Gotte -->
+<users>
+	<!--root node, to hold all the possible users of the mobile application-->
+	<user username="daddy long leg(92)">
+		<!-- Defines and individual user -->
+		<number>321 021 2222</number>
+		<location>Greasy Corner, Arkansas</location>
+			<!-- Define the user's interest -->
+		<intrests>
+			<intrest type="music">
+				<!-- Holds all music data this user is intrested in -->
+				<album albumname="Everyone Who Pretended to Like Me Is Gone (album)">
+					<artist>The Walkmen</artist>
+					<publisher></publisher>
+					<rating>4.5 star</rating>
+					<duration>50:49</duration>
+					<realeasedate>March 26, 2002</realeasedate>
+					<genres>
+						<genre>Pop/Rock</genre>
+						<genre>Styles</genre>
+						<genre>Alternative/Indie Rock</genre>
+						<genre>Indie Rock</genre>
+						<genre>Garage Rock Revival</genre>
+					</genres>
+					<styles></styles>
+					<recording>
+						<date>2001</date>
+						<location>Marcata Recording, Manhattan</location>
+					</recording>
+				</album>
+				<album albumname="Daru(2000)">
+					<artist>Daru</artist>
+					<publisher></publisher>
+					<rating></rating>
+					<duration></duration>
+					<releasedate></releasedate>
+					<genres>
+						<genre>Vocal</genre>
+						<genre>International</genre>
+					</genres>
+					<styles>
+						<style>Cabaret</style>
+						<style>Russian Traditions</style>
+					</styles>
+					<recording>
+						<date></date>
+						<location></location>
+					</recording>
+				</album>
+			</intrest>
+			<intrest type="movie">
+				<!-- Holds all movie data this user is intrested in -->
+				<movie title="Juno">
+					<duration>1h 36min</duration>
+					<genres>
+						<genre>Comedy</genre>
+						<genre>Drama</genre>
+					</genres>
+					<platform></platform>
+					<synopsis>Faced with an unplanned pregnancy, an offbeat young woman makes an unusual decision regarding the inborn child.</synopsis>
+					<rating type="content">PG-13</rating>
+					<rating type="consumer">4 star</rating>
+					<releasedate>25 December 2007</releasedate>
+					<cast>
+						<actor></actor>
+						<actress></actress>
+					</cast>
+					<filmstaff>
+						<member gender="female"></member>
+						<member gender="male"></member>
+					</filmstaff>
+				</movie>
+			</intrest>
+			<intrest type="game">
+				<!-- Holds all game data this user is intrested in -->
+				<game title="Red Dead Redemption">
+					<genres>
+						<genre></genre>
+					</genres>
+					<platforms>
+						<platform>PlayStation 4</platform>
+						<platform>XBox One</platform>
+					</platforms>
+					<synopsis>
+						Red Dead Redemption 2 is a Western action-adventure game developed and published by Rockstar 
+						Games. It was released on October 26, 2018, for the PlayStation 4 and Xbox One consoles. The third 
+						entry in the Red Dead series, it is a prequel to the 2010 game Red Dead Redemption.
+					</synopsis>
+					<dates>
+						<initialrelease>26 Ocotber 2018</initialrelease>
+					</dates>
+					<rating type="content"></rating>
+					<rating type="consumer">10/10!!!!!</rating>
+					<developers>
+						<developer>Rockstar Games</developer>
+						<developer>Rockstar North</developer>
+						<developer>Rockstar San Diego</developer>
+					</developers>
+					<designers>
+						<designer></designer>
+					</designers>
+					<awards>The Game Award for Best Narrative</awards>
+					<writers>
+						<writer></writer>
+					</writers>
+					<composer></composer>
+					<series>Red Dead</series>
+					<engine>Rockstar Advanced game Engine</engine>
+				</game>
+				<game title="The Last of Us Part II">
+					<genres>
+						<genre></genre>
+					</genres>
+					<platforms>
+						<platform>PlayStation 4</platform>
+					</platforms>
+					<synopsis></synopsis>
+					<dates>
+						<date></date>
+					</dates>
+					<rating type="content"></rating>
+					<rating type="consumer"></rating>
+					<developers>
+						<developer>Naughty Dog</developer>
+					</developers>
+					<designers>
+						<designer>Emilia Schatz</designer>
+						<designer>Ricky Cambier</designer>
+					</designers>
+					<awards>The Game Award for Most Anticipated Game</awards>
+					<writers>
+						<writer>Neil Druckmann</writer>
+						<writer>Halley Gross</writer>
+					</writers>
+					<composer>Gustavo Santaolalla</composer>
+					<series></series>
+					<engine></engine>
+				</game>
+			</intrest>
+		</intrests>
+	</user>
+</users>

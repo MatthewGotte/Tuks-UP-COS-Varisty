@@ -1,0 +1,66 @@
+* {
+    font-family:arial,helvetica, sans-serif;
+}
+
+.background {
+    background-color: black;
+}
+
+#error {
+    background-color: #202020;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 18px;
+    width: 35%;
+    
+}
+
+#logo {
+    position: absolute;
+    top: 15%;
+    width: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#heading {
+    color: white;
+    font-size: 35px;
+    width: fit-content;
+
+}
+
+#message > a {
+    color: #05acf4;
+}
+
+#oops {
+    color: #05acf4;
+    font-size: 35px;
+    margin-right: 2%;
+}
+
+.linear {
+    display: flex;
+    flex-direction: row;
+}
+
+#header {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0%;
+
+}
+
+h1 {
+    color: #646464;
+    font-size: 20px;
+}
+
+#message {
+    text-align: center;
+    margin-bottom: 5%;
+}

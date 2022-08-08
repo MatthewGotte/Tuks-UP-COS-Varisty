@@ -1,0 +1,32 @@
+<mat-grid-list cols="1" rows="1" rowHeight="2:1">
+  
+    <mat-card>
+        <mat-card-content>
+
+          <!-- login form -->
+          <form [formGroup]="otpForm">
+
+            <h2>OTP</h2>
+
+            <!-- password input field -->
+            <mat-form-field>
+              <input formControlName="otp" matInput type="text" placeholder="OTP" name="OTP" required>
+              <mat-hint [align]="'end'">
+                  4 digits long
+              </mat-hint>
+              <mat-error>
+                OTP must be 4 digits long
+              </mat-error>
+            </mat-form-field>
+
+            <!-- login button -->
+            <button mat-raised-button color="primary" (click)="send()" id="otp">Send</button>
+           
+          </form>
+
+          <mat-spinner *ngIf="loader"></mat-spinner>
+
+      </mat-card-content>
+    </mat-card>
+
+</mat-grid-list>

@@ -1,0 +1,41 @@
+<mat-grid-list cols="1" rows="1" rowHeight="2:1">
+  
+    <mat-card>
+        <mat-card-content>
+
+          <!-- login form -->
+          <form [formGroup]="registerForm">
+
+            <h2>Register</h2>
+
+            <!-- email input field -->
+            <mat-form-field>
+              <input formControlName="email" matInput type="email" placeholder="Username" name="username" required>
+              <mat-error>
+                Email is required
+              </mat-error>
+            </mat-form-field>
+
+            <!-- password input field -->
+            <mat-form-field>
+              <input formControlName="password" matInput type="Password" placeholder="Password" name="password" required>
+              <mat-hint [align]="'end'">
+                  min 8 characters long
+              </mat-hint>
+              <mat-error>
+                Password must be 8 chars long
+              </mat-error>
+            </mat-form-field>
+
+            <!-- login button -->
+            <button mat-raised-button color="primary" (click)="register()" id="register">Register</button>
+            <p>Already have an account? Login <a routerLink="/login">here</a></p>
+           
+            <mat-spinner *ngIf="loader"></mat-spinner>
+
+          </form>
+
+      </mat-card-content>
+    </mat-card>
+
+</mat-grid-list>

@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Section B - Ionic & Reporting
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-button expand="block" (click)="presentActionSheet()" *ngIf="!showData" >Show Action Sheet</ion-button>
+
+  <div id="container" *ngIf="showData">
+
+      <div class="col-md-6" style="float: left">
+
+        <div class="chart-wrapper" id="htmlData">
+
+          <h3>Product Sales</h3>
+
+          <canvas baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          colors="chartColors"
+          [legend]="barChartLegend"
+          chartType="bar">
+          </canvas>
+
+        </div>
+
+        <div>
+          <button style="float: left " class="btn btn-success btn-block" (click)="openPDF()">Download PDF</button>
+        </div>
+
+      </div>
+
+      <div class="col-md-6" style="float: left">
+        
+        <h3>Product Sales</h3>
+
+        <!-- --------------------------------------------------
+        DO NOT EDIT ABOVE THIS LINE
+        -------------------------------------------------- -->
+
+        <!-- ------------------------------------------------
+          COMPLETE Q2 BELOW THIS LINE
+        ---------------------------------------------------->
+
+          <ion-grid>
+
+            <ion-row>
+              <ion-col><strong>Product Name</strong></ion-col>
+              <ion-col><strong>Number Sold</strong></ion-col>
+            </ion-row>
+
+            <ion-row *ngFor="let product of tableData">
+              <ion-col>{{ product.name }}</ion-col>
+              <ion-col>{{ product.value }}</ion-col>
+            </ion-row>
+            
+          </ion-grid>
+
+        <!-- --------------------------------------------------
+        DO NOT EDIT BELOW THIS LINE
+        -------------------------------------------------- -->
+
+      </div>
+
+  </div>
+
+</ion-content>

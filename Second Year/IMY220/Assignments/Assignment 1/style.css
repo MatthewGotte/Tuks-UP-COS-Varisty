@@ -1,0 +1,29 @@
+/*add margin top to signup form for screen < 576*/
+@media only screen and (max-width: 576px) {
+    .mt3 {
+        margin-top: 3%;
+    }
+}
+
+.card-header {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.button_arrow > .rotate_down {
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+    margin-left: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+    .button_arrow:hover > .rotate_down { 
+        transform: rotate(90deg);
+        transition: transform 0.5s;
+    }
+}
+
+

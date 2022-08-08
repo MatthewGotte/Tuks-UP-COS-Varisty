@@ -1,0 +1,95 @@
+#ifndef MSGQUEUE_CPP
+#define MSGQUEUE_CPP
+
+#include "msgQueue.h"
+
+#include "msgNode.h"
+#include "msgNode.cpp"
+
+#include <string>
+
+template <class T>
+msgQueue<T>::msgQueue() {
+    this->head = nullptr;
+    this->tail = nullptr;
+}
+
+template <class T>
+msgQueue<T>::~msgQueue() {
+    msgNode<T> * nodePtr = head;
+    while (nodePtr) {
+        if (nodePtr->next) {
+            head = nodePtr->next;
+            delete nodePtr;
+        } else {
+            delete nodePtr;
+            head = nullptr;
+        }
+        nodePtr = head;
+    }
+}
+
+template <class T>
+void msgQueue<T>::enqueue(msgNode<T> *t) {
+    if (!(head || tail)) {
+        head = t;
+        tail = t;
+    }
+    else {
+        tail->next = t;
+        tail = t;
+    }
+}
+
+template <class T>
+void msgQueue<T>::dequeue() {
+    if (head && tail) {
+        msgNode<T> *nodePtr = head;
+        if (head != tail) {
+            head = nodePtr->next;
+            delete nodePtr;
+        } else {
+            delete nodePtr;
+            head = nullptr;
+            tail = nodePtr;
+        }
+    }
+}
+
+template <class T>
+msgNode<T> * msgQueue<T>::peek() {
+    return this->head;
+}
+
+template  <class T>
+void msgQueue<T>::print() {
+    msgNode<T> * nodePtr = head;
+    int index = 0;
+    while (nodePtr) {
+        std::cout << "Message " << index << " [Size: " << nodePtr->getSize() << "]" << std::endl;
+        nodePtr = nodePtr->next;
+        index++;
+    }
+}
+
+template <class T>
+void msgQueue<T>::compileMessageData() {
+    float totalSize = 0;
+    int counter = 0;
+    msgNode<T> * nodePtr = head;
+    while (nodePtr) {
+        counter++;
+        totalSize += nodePtr->getSize();
+        nodePtr = nodePtr->next;
+    }
+    std::cout << "Total Number of Messages: " << counter << std::endl;
+    int den = 1;
+    std::string stype = "KB";
+    if (totalSize > 1000) {
+        den = 1000;
+        stype = "MB";
+    }
+    std::cout << "Size: " << totalSize/den << stype << std::endl;
+}
+
+#endif

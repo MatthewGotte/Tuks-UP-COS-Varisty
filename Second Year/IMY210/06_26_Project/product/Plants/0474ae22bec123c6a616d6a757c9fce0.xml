@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Orchid</name>
+  <id>0474ae22bec123c6a616d6a757c9fce0</id>
+  <stock>65</stock>
+  <description>White orchid plant </description>
+  <category>Plants</category>
+  <image>0474ae22bec123c6a616d6a757c9fce0.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="USD">259</sale_price>
+  <additional/>
+</product>

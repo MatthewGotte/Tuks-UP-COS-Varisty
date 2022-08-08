@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Toy Cellphone  </name>
+  <id>f5e24fd09a7c3a4d37e98caf69f35758</id>
+  <stock>34</stock>
+  <description>Plush cellphone toy </description>
+  <category>Baby and Toddler</category>
+  <image>f5e24fd09a7c3a4d37e98caf69f35758.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="GBP">4</sale_price>
+  <additional/>
+</product>

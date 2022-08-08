@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/transformation.xsl"?>
+<product>
+  <name>Storage Basket </name>
+  <id>03b06ccffbc9424f9e46d9e0167b6d25</id>
+  <stock>58</stock>
+  <description>Grass woven storage basket </description>
+  <category>Baby and Toddler</category>
+  <image>03b06ccffbc9424f9e46d9e0167b6d25.jpg</image>
+  <available>2021-06-28</available>
+  <sale_price currency="USD">150</sale_price>
+  <additional>&lt;test&gt;Manual input&lt;/test&gt;</additional>
+</product>

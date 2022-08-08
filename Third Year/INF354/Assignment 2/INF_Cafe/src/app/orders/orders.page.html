@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Orders</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  <div *ngIf="!empty">
+    <ion-item *ngFor="let item of orders"><ion-label>Order #{{ item.orderId }} : {{ getDate(item.date) }}</ion-label></ion-item>
+  </div>
+  <div *ngIf="empty">
+    <ion-button color="danger" expand="full" fill="solid">No orders to display</ion-button>
+  </div>
+</ion-content>

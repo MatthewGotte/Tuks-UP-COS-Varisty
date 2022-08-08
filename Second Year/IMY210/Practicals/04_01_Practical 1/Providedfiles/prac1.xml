@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE person SYSTEM "prac1.dtd">
+
+<person  id="a">
+<![CDATA[id strings can not begin with numbers.]]>
+<![CDATA[incorrect xml closing tag was declared first.]]>
+<![CDATA[xml cannot appear in the document outside of the doc declaration.]]>
+<![CDATA[1 was not in "".]]>
+	<fullname>
+		<first>Daddy</first>
+		<last>Long</last>
+	</fullname>
+		<![CDATA[The closing tags were in the wrong orders]]>
+	<age>92</age>
+	<![CDATA[The closing tag was missing a /]]>
+	<id>0000000000001</id>
+	<![CDATA[id opening tag did not match]]>
+</person>
