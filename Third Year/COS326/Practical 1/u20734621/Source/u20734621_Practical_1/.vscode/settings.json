@@ -1,8 +1,0 @@
-{
-    "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "c:\\Users\\matth\\Documents\\GitHub\\COS326\\Practical 1\\u20734621\\Source\\objectdb-2.8.7\\bin\\objectdb.jar"
-    ]
-}
