@@ -1,0 +1,39 @@
+\begin{thebibliography}{1}
+
+\bibitem{wiki:befunge}
+esolang.
+\newblock Befunge, 2022.
+
+\bibitem{ArnoldC}
+esolangs.org.
+\newblock Arnoldc, 2020.
+
+\bibitem{Tree}
+esolangs.org.
+\newblock Tree, 2021.
+
+\bibitem{IBM:stateful}
+IBM.
+\newblock Stateful encodings, 2017.
+
+\bibitem{EsotericProgrammingLanguagesDefinition}
+Joshua Otwell.
+\newblock Esoteric programming languages, 2021.
+
+\bibitem{befunge}
+techopedia.
+\newblock Befunge, 2017.
+
+\bibitem{Ada}
+Wikipedia.
+\newblock Ada (programming language), 2022.
+
+\bibitem{DesignByContract}
+Wikipedia.
+\newblock Design by contract, 2022.
+
+\bibitem{Oxygene}
+Wikipedia.
+\newblock Oxygene (programming language), 2022.
+
+\end{thebibliography}

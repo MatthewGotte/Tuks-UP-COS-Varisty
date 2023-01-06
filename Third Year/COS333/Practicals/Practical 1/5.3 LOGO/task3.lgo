@@ -1,0 +1,38 @@
+TO  createCircle :circleCount :circleRadius
+  clearscreen
+  penup
+  hideturtle
+  drawCircle :circleCount*2 :circleRadius 0
+  home
+END
+
+TO createCircleRecursive :circlesTotal :circleRadius :position
+
+  ;Base case 1 - stop drawing
+  if :position = :circlesTotal [stop]
+
+  ;Base case 2 - draw last circle
+  if :circlesTotal = 1 [
+  	pendown
+    arc 360 :circleRadius
+  	penup
+    stop
+  ]
+
+  ;Move turtle to draw
+  setx :circleRadius * cos((2*180 * :position) / :circlesTotal)
+  sety :circleRadius * sin((2*180 * :position) / :circlesTotal)
+
+  ;Draw the circle
+  pendown
+  arc 360 (:circleRadius * sin( 180 / :circlesTotal))
+  penup
+
+  ;Recursive call  
+  drawCircle :circlesTotal :circleRadius (:position+2)
+
+END
+
+;Start drawing circlewith
+;Inputs - circleCount, circleRadius
+createCircle 10 100
