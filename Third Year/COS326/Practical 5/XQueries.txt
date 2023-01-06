@@ -1,0 +1,43 @@
+(: Question 1 :)
+//musicians/musician/name
+
+(: Question 2 :)
+//musician[name="Tool"]//album|//musician[name="Tool"]/albums/album/@year
+
+(: Question 3 :)
+//musician/albums[album="Lateralus"]/../name
+
+(: Question 4 :)
+//musician[contains(genre, "Pop")]
+
+(: Question 5 :)
+//musician[@type="solo"]
+
+(: Question 6 :)
+//musician[@type="solo"][2]
+
+(: Question 7 :)
+//musician[name="Ben Folds"]/albums/album[4]
+
+(: Question 8 :)
+//musician//album[@year>=2008]
+
+(: Question 9 :)
+for $m in /musicians/musician
+let $high := max($m/albums/album/@year), $low := min($m/albums/album/@year)
+order by ($high - $low + 1) div count($m/albums/album) descending
+let $name := data($m/name), $rate := data($high - $low + 1) div count($m/albums/album)
+return concat($name, ", ", $rate)
+
+(: Question 10 :)
+<list>
+  {
+    for $m in /musicians/musician
+    return <artist>
+      <name>{$m//name}</name>
+      <album-count>{count($m//album)}</album-count>
+      <most-recent>{max($m//album/@year)}</most-recent>
+    </artist>
+  }
+</list>
+

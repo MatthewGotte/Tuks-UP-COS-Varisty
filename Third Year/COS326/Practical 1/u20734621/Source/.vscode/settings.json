@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "objectdb-2.8.7/bin/objectdb.jar"
+    ]
+}

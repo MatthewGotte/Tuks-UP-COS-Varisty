@@ -1,0 +1,42 @@
+<students>
+<student module="COS326">
+<name>Sheunesu Makura</name>
+<age> 18 </age>
+</student>
+<student module="COS333">
+<name>Thando Mandela</name>
+<age> 21 </age>
+</student>
+<student module="COS735">
+<name>Palesa Mohlare</name>
+<age> 25 </age>
+</student>
+<student module="COS151">
+<name>Andries van der Merwe</name>
+<age> 19 </age>
+</student>
+<student module="COS223">
+<name>Xolisa Phila</name>
+<age> 23 </age>
+</student>
+<student module="COS301">
+<name>Ndivhuwo Makhado</name>
+<age> 24 </age>
+</student>
+<student module="COS721">
+<name>Tshifhiwa Ndou</name>
+<age> 22 </age>
+</student>
+<student module="COS122">
+<name>Marianne Jordaan</name>
+<age> 28 </age>
+</student>
+<student module="COS216">
+<name>Thulasizwe Nkandla</name>
+<age> 20 </age>
+</student>
+<student module="COS314">
+<name>Avinash Panday</name>
+<age> 23 </age>
+</student>
+</students>

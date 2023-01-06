@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<STAFFLIST>
+   <STAFF branchNo="B005">
+      <STAFFNO>SL21</STAFFNO>
+      <NAME>
+         <FNAME>John</FNAME>
+         <LNAME>White</LNAME>
+      </NAME>
+      <POSITION>Manager</POSITION>
+      <DOB>1-Oct-45</DOB>
+      <SALARY>30000</SALARY>
+   </STAFF>
+   <STAFF branchNo="B003">
+      <STAFFNO>SG37</STAFFNO>
+      <NAME>
+         <FNAME>Ann</FNAME>
+         <LNAME>Beech</LNAME>
+      </NAME>
+      <POSITION>Assistant</POSITION>
+      <SALARY>I2000</SALARY>
+   </STAFF>
+</STAFFLIST>

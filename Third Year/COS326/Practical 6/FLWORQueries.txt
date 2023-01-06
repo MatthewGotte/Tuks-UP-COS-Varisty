@@ -1,0 +1,66 @@
+Question 1:
+
+for $s in /students/student
+return $s/name
+
+
+Question 2:
+
+for $s in /students
+return count($s/student)
+
+
+Question 3:
+
+count(
+  for $s in /students/student
+  let $module := $s/@module
+  let $code := substring($module, 4, 1)
+  where $code = "7"
+  return $s
+)
+
+
+Question 4:
+
+for $s in /students/student
+return concat($s/name, ": ", $s/age)
+
+
+Question 5:
+
+for $s in /students/student
+where $s/age > 23
+return $s
+
+
+Question 6:
+
+for $s in /students/student
+where $s/age < 30
+order by $s/age descending
+return $s
+
+
+Question 7:
+
+for $s in /students/student
+let $module := $s/@module
+let $code := substring($module, 4, 1)
+where $code = "3"
+return $s
+
+
+Question 8:
+
+for $s in /students
+return sum($s/student/age) div count($s/student)
+
+
+Question 9:
+
+for $s in /students/student
+let $module := $s/@module
+let $code := substring($module, 4, 1)
+where $code = "3" and $s/age < 22
+return $s
